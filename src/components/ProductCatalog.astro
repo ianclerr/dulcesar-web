@@ -154,7 +154,7 @@ const counts = Object.fromEntries(
               data-search={product.nombre.toLowerCase()}
               class="card flex flex-col overflow-hidden"
             >
-              <span class="block aspect-square overflow-hidden bg-[#f1f1f1]">
+              <span class="block aspect-[4/5] overflow-hidden bg-[#e9e9e9]">
                 <img
                   src={product.imagen}
                   alt={product.nombre}
@@ -162,7 +162,7 @@ const counts = Object.fromEntries(
                   height="800"
                   loading="lazy"
                   decoding="async"
-                  class="h-full w-full object-contain p-2"
+                  class="h-full w-full object-cover"
                 />
               </span>
               <div class="flex flex-1 flex-col p-3 sm:p-4">

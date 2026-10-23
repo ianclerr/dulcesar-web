@@ -43,9 +43,12 @@ body {
   overflow-x: clip;
 }
 
+html:has(body.menu-open),
+html:has(body.modal-open),
 body.menu-open,
 body.modal-open {
   overflow: hidden;
+  overscroll-behavior: none;
 }
 
 img {
