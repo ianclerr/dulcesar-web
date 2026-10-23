@@ -3,19 +3,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 
 const timeline = [
-  ['1982', 'Fundación de Dul-Cesar', 'Nacimos en un pequeño hogar, bajo la sombra de un árbol de mango, con el deseo de elaborar alimentos con dedicación y respeto por la tradición.'],
-  ['1985', 'Primeros productos', 'La mermelada de guayaba conquistó hogares paraguayos, seguida por el dulce de mamón y el dulce de batata.'],
-  ['1990', 'Crecimiento familiar', 'Con el liderazgo de Aníbal Ramón Zimardi y Ana María Riveros de Zimardi, la empresa apostó por la mejora continua.'],
-  ['2000', 'Un portafolio más amplio', 'Sumamos mermeladas, dulces, aderezos, salsas, vinagres y nuevas líneas de alimentos.'],
-  ['2010', 'Más de 200 productos', 'Ampliamos nuestra presencia para abastecer puntos de venta en todo Paraguay.'],
-  ['Hoy', 'Una identidad renovada', 'Seguimos proyectándonos hacia mercados exigentes sin perder la esencia familiar ni nuestra raíz paraguaya.'],
+  ['1982', 'Fundación de Dul-Cesar', 'En un pequeño hogar, bajo la sombra de un árbol de mango, nació una pasión impulsada por una visión clara: ofrecer productos alimenticios elaborados con dedicación, respeto por la tradición y un profundo compromiso.'],
+  ['1985', 'Primeros productos', 'La mermelada de guayaba tradicional fue el primer producto en salir al mercado y conquistó los hogares paraguayos por su sabor auténtico y su calidad constante. Le siguieron el dulce de mamón y el dulce de batata tradicional.'],
+  ['1990', 'Crecimiento familiar', 'Con el liderazgo de Aníbal Ramón Zimardi y Ana María Riveros de Zimardi, Dul-Cesar creció apostando a la mejora continua, la expansión del portafolio y procesos productivos eficientes y sostenibles.'],
+  ['2000', 'Un portafolio más amplio', 'Mermeladas, dulces, aderezos, salsas, vinagres y más productos que buscan simplificar la vida del consumidor.'],
+  ['2010', 'Más de 200 productos', 'Lo que comenzó como un pequeño emprendimiento hoy abastece puntos de venta con el objetivo de ganar el corazón de los consumidores.'],
+  ['Hoy', 'Una identidad renovada', 'Nos proyectamos con un enfoque estratégico orientado a mercados más exigentes, sin perder nuestra esencia familiar ni nuestra raíz profundamente paraguaya.'],
 ];
 
 const commitments = [
-  ['Selección de ingredientes', 'Trabajamos con materias primas seleccionadas para cuidar el sabor y la calidad.'],
-  ['Procesos responsables', 'Combinamos técnicas tradicionales y tecnología para lograr productos consistentes.'],
-  ['Control de calidad', 'Cada etapa, desde la recepción de insumos hasta el producto final, recibe seguimiento.'],
-  ['Innovación continua', 'Desarrollamos nuevas opciones atendiendo las necesidades de las familias y del mercado.'],
+  ['Seguridad alimentaria', 'Los más altos estándares de calidad y seguridad en cada etapa del proceso.'],
+  ['Tradición y tecnología', 'Un modelo de gestión que combina recetas de origen con procesos eficientes y sostenibles.'],
+  ['Proveedores locales', 'Impulsamos el desarrollo de proveedores paraguayos.'],
+  ['Vínculos con clientes', 'Fortalecemos la relación con nuestros clientes a nivel nacional e internacional.'],
 ];
 ---
 
@@ -27,7 +27,7 @@ const commitments = [
   <PageHero
     eyebrow="Nuestra historia"
     title="Raíces familiares, sabor paraguayo"
-    description="Una historia de trabajo, cercanía e innovación que comenzó en 1982 y sigue creciendo con cada producto."
+    description="Tradición, calidad y compromiso con el sabor paraguayo."
     image="/images/picnic.webp"
   />
 
@@ -37,18 +37,20 @@ const commitments = [
         <span class="font-extrabold uppercase tracking-[.18em] text-red-700">Nuestros orígenes</span>
         <h2 class="section-title mt-3">Una idea nacida en familia</h2>
         <p class="mt-6 text-lg leading-relaxed text-neutral-600">
-          Dul-Cesar comenzó como un emprendimiento familiar. Desde el inicio, la misión fue sencilla:
-          acercar productos ricos, confiables y elaborados con el cuidado de una receta hecha en casa.
+          Dul-Cesar ICSA es una empresa paraguaya con más de 40 años de trayectoria, dedicada a la
+          producción, fraccionamiento, envasado, distribución e importación de productos alimenticios,
+          comprometida con los más altos estándares de calidad y seguridad en cada etapa del proceso.
         </p>
         <p class="mt-4 text-lg leading-relaxed text-neutral-600">
-          Aníbal Ramón Zimardi y Ana María Riveros de Zimardi guiaron ese crecimiento con una mirada
-          puesta en la calidad, el trabajo constante y el respeto por quienes eligen nuestros sabores.
+          Así surgió Dul-Cesar, una marca que con el paso del tiempo se consolidó como referente en la
+          industria nacional de alimentos.
         </p>
       </div>
       <div class="card reveal p-8 sm:p-10">
         <p class="font-display text-4xl text-red-700">Nuestro propósito</p>
         <blockquote class="mt-5 text-xl leading-relaxed text-neutral-700">
-          “Crear productos que acompañen la vida cotidiana y mantengan vivo el sabor de compartir.”
+          “Acompañar los momentos cotidianos de las familias, con equilibrio entre innovación, sabor y
+          respeto por los valores que nos dieron origen.”
         </blockquote>
         <div class="mt-8 grid grid-cols-2 gap-4">
           <div class="rounded-2xl bg-red-50 p-5">
@@ -113,8 +115,8 @@ const commitments = [
     <div class="container-site reveal">
       <h2 class="section-title">El futuro conserva nuestra esencia</h2>
       <p class="mx-auto mt-6 max-w-3xl text-lg text-white/80">
-        Queremos llegar a más hogares y mercados con productos renovados, sin perder la cercanía, la
-        dedicación y la identidad profundamente paraguaya que nos trajo hasta acá.
+        Porque en cada frasco, en cada envase y en cada sabor, seguimos transmitiendo lo que nos mueve
+        desde el primer día: el deseo de llevar a la mesa de cada hogar #Dulcesmomentos.
       </p>
       <a href="/contacto" class="btn btn-light mt-8">Ponete en contacto</a>
     </div>

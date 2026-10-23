@@ -32,6 +32,6 @@ se puede indicar la carpeta de imágenes con la variable `DULCESAR_LEGACY_IMAGES
 
 ## Datos pendientes de validar
 
-Antes de publicar deben confirmarse el dominio definitivo, las direcciones de correo
-`info@dulcesar.com.py` y `ventas@dulcesar.com`, y cualquier canal oficial de WhatsApp o redes sociales.
-No se trasladaron los números ni enlaces sociales de prueba del proyecto anterior.
+Antes de publicar deben confirmarse el dominio definitivo, la dirección `ventas@dulcesar.com` y si
+el celular (0974) 699-585 es también canal de WhatsApp. Instagram (@productos_dulcesar),
+`info@dulcesar.com.py` y los teléfonos ya fueron confirmados por el cliente.
