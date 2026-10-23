@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+
+const benefits = [
+  ['Precios mayoristas', 'Condiciones comerciales pensadas para acompañar el crecimiento de tu negocio.'],
+  ['Soporte comercial', 'Orientación sobre productos, formatos y oportunidades para tu zona.'],
+  ['Calidad garantizada', 'Un portafolio respaldado por más de 40 años de experiencia.'],
+];
+---
+
+<BaseLayout
+  title="Distribuidores | Dul-Cesar"
+  description="Conocé cómo incorporar productos Dul-Cesar a tu negocio y formar parte de nuestra red comercial."
+  image="/images/picnic.webp"
+>
+  <PageHero
+    eyebrow="Crezcamos juntos"
+    title="Distribuí productos Dul-Cesar"
+    description="Sumá a tu negocio una marca paraguaya con trayectoria, variedad de formatos y productos para diferentes momentos de consumo."
+    image="/images/picnic.webp"
+  />
+
+  <section class="section pattern">
+    <div class="container-site grid gap-6 md:grid-cols-3">
+      {
+        benefits.map(([title, text], index) => (
+          <article class="card reveal p-7">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-red-700 font-black text-white">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <h2 class="mt-5 font-display text-3xl">{title}</h2>
+            <p class="mt-3 text-neutral-600">{text}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container-site grid items-center gap-12 lg:grid-cols-2">
+      <div class="reveal">
+        <span class="font-extrabold uppercase tracking-[.18em] text-red-700">Una alianza a largo plazo</span>
+        <h2 class="section-title mt-3">Todo lo necesario para empezar</h2>
+        <p class="mt-5 text-lg text-neutral-600">
+          Buscamos comercios y distribuidores que compartan nuestro compromiso por el buen servicio
+          y quieran acercar Dul-Cesar a nuevas comunidades.
+        </p>
+        <ul class="mt-7 grid gap-3">
+          <li class="rounded-xl bg-red-50 p-4 font-bold">Catálogo con distintas familias y presentaciones</li>
+          <li class="rounded-xl bg-orange-50 p-4 font-bold">Atención personalizada para consultas comerciales</li>
+          <li class="rounded-xl bg-red-50 p-4 font-bold">Marca reconocida y con presencia nacional</li>
+          <li class="rounded-xl bg-orange-50 p-4 font-bold">Material de producto para facilitar la venta</li>
+        </ul>
+      </div>
+
+      <form id="distributor-form" class="card reveal grid gap-5 p-6 sm:p-8">
+        <div>
+          <p class="text-xs font-black uppercase tracking-[.18em] text-red-700">Contacto comercial</p>
+          <h2 class="mt-1 font-display text-4xl">Contanos sobre tu negocio</h2>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2">
+          <label class="grid gap-2 font-bold">
+            Empresa
+            <input required name="empresa" class="rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500" />
+          </label>
+          <label class="grid gap-2 font-bold">
+            Nombre
+            <input required name="nombre" autocomplete="name" class="rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500" />
+          </label>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2">
+          <label class="grid gap-2 font-bold">
+            Correo
+            <input required type="email" name="correo" autocomplete="email" class="rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500" />
+          </label>
+          <label class="grid gap-2 font-bold">
+            Ciudad
+            <input required name="ciudad" autocomplete="address-level2" class="rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500" />
+          </label>
+        </div>
+        <label class="grid gap-2 font-bold">
+          Mensaje
+          <textarea
+            required
+            name="mensaje"
+            rows="5"
+            class="resize-y rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500"
+            placeholder="Tipo de comercio, zona de cobertura o productos de interés"
+          ></textarea>
+        </label>
+        <p class="text-sm text-neutral-500">
+          Al enviar, se abrirá tu aplicación de correo. Este sitio no almacena tus datos.
+        </p>
+        <button class="btn btn-primary w-fit" type="submit">Preparar consulta</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section bg-red-800 text-white">
+    <div class="container-site text-center reveal">
+      <h2 class="section-title">¿Preferís escribir directamente?</h2>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-white/80">
+        Nuestro canal comercial recibe consultas sobre distribución, disponibilidad y formatos.
+      </p>
+      <a class="btn btn-light mt-8" href="mailto:ventas@dulcesar.com">ventas@dulcesar.com</a>
+    </div>
+  </section>
+
+  <script>
+    document.querySelector<HTMLFormElement>('#distributor-form')?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const form = new FormData(event.currentTarget as HTMLFormElement);
+      const subject = `[Distribución] ${form.get('empresa')} · ${form.get('ciudad')}`;
+      const body =
+        `Empresa: ${form.get('empresa')}\n` +
+        `Nombre: ${form.get('nombre')}\n` +
+        `Correo: ${form.get('correo')}\n` +
+        `Ciudad: ${form.get('ciudad')}\n\n` +
+        `${form.get('mensaje')}`;
+      window.location.href = `mailto:ventas@dulcesar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</BaseLayout>

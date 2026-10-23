@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fff7ed;
+  --color-brand-100: #ffedd5;
+  --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #fb923c;
+  --color-brand-500: #f97316;
+  --color-brand-600: #ea580c;
+  --color-brand-700: #c2410c;
+  --color-brand-800: #9a3412;
+  --color-brand-900: #7c2d12;
+  --color-dulcesar: #c82026;
+  --font-display: "Lobster", Georgia, serif;
+  --font-body: "Nunito Sans", Arial, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  --header-height: 4.75rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 1rem);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fffaf6;
+  color: #262626;
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+}
+
+body.menu-open,
+body.modal-open {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  outline-color: #c82026;
+  outline-offset: 3px;
+}
+
+.container-site {
+  width: min(100% - 2rem, 76rem);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4.25rem);
+  line-height: 1.05;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / .16);
+  border: 1px solid rgb(255 255 255 / .28);
+  padding: .45rem .9rem;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  border-radius: 999px;
+  padding: .75rem 1.35rem;
+  font-weight: 800;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: #c82026;
+  color: white;
+  box-shadow: 0 14px 35px rgb(200 32 38 / .24);
+}
+
+.btn-primary:hover {
+  background: #a9161b;
+}
+
+.btn-light {
+  background: white;
+  color: #b91c1c;
+  box-shadow: 0 14px 35px rgb(0 0 0 / .14);
+}
+
+.card {
+  border: 1px solid rgb(200 32 38 / .08);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / .94);
+  box-shadow: 0 18px 45px rgb(66 26 14 / .08);
+}
+
+.pattern {
+  background-color: #fff8f4;
+  background-image:
+    linear-gradient(rgb(200 32 38 / .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(200 32 38 / .045) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+dialog {
+  border: 0;
+  padding: 0;
+}
+
+dialog::backdrop {
+  background: rgb(31 14 10 / .7);
+  backdrop-filter: blur(7px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,483 @@
+[
+  {
+    "id": "aderezos-salsa-de-ajo-1-l",
+    "nombre": "Salsa De Ajo 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-1-l.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-150-ml",
+    "nombre": "Salsa De Ajo 150 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-150-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-250-ml",
+    "nombre": "Salsa De Ajo 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-250-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-5-l",
+    "nombre": "Salsa De Ajo 5 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-5-l.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-lomitero-1-l",
+    "nombre": "Salsa De Ajo Lomitero 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-lomitero-1-l.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-lomitero-250-ml",
+    "nombre": "Salsa De Ajo Lomitero 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-lomitero-250-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-y-limon-250-ml",
+    "nombre": "Salsa De Ajo Y Limon 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-y-limon-250-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-y-vinagre-250-ml",
+    "nombre": "Salsa De Ajo Y Vinagre 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-y-vinagre-250-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-ajo-y-vinagre-500-ml",
+    "nombre": "Salsa De Ajo Y Vinagre 500 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-ajo-y-vinagre-500-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-soja-1-l",
+    "nombre": "Salsa De Soja 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-soja-1-l.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-soja-450-ml",
+    "nombre": "Salsa De Soja 450 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-soja-450-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-soja-5-l",
+    "nombre": "Salsa De Soja 5 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-soja-5-l.webp"
+  },
+  {
+    "id": "aderezos-salsa-de-soja-de-250-ml",
+    "nombre": "Salsa De Soja De 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-de-soja-de-250-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-picante-1-l",
+    "nombre": "Salsa Picante 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-picante-1-l.webp"
+  },
+  {
+    "id": "aderezos-salsa-picante-150-ml",
+    "nombre": "Salsa Picante 150 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-picante-150-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-picante-250-ml",
+    "nombre": "Salsa Picante 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-picante-250-ml.webp"
+  },
+  {
+    "id": "aderezos-salsa-picante-5-l",
+    "nombre": "Salsa Picante 5 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/salsa-picante-5-l.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-alcohol-1-l",
+    "nombre": "Vinagre De Alcohol 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-alcohol-1-l.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-alcohol-500-ml",
+    "nombre": "Vinagre De Alcohol 500 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-alcohol-500-ml.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-manzana-1-l",
+    "nombre": "Vinagre De Manzana 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-manzana-1-l.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-manzana-250-ml",
+    "nombre": "Vinagre De Manzana 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-manzana-250-ml.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-manzana-500-ml",
+    "nombre": "Vinagre De Manzana 500 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-manzana-500-ml.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-vino-blanco-1-l",
+    "nombre": "Vinagre De Vino Blanco 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-vino-blanco-1-l.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-vino-blanco-250-ml",
+    "nombre": "Vinagre De Vino Blanco 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-vino-blanco-250-ml.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-vino-blanco-500-ml",
+    "nombre": "Vinagre De Vino Blanco 500 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-vino-blanco-500-ml.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-vino-tinto-1-l",
+    "nombre": "Vinagre De Vino Tinto 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-vino-tinto-1-l.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-vino-tinto-250-ml",
+    "nombre": "Vinagre De Vino Tinto 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-vino-tinto-250-ml.webp"
+  },
+  {
+    "id": "aderezos-vinagre-de-vino-tinto-500-ml",
+    "nombre": "Vinagre De Vino Tinto 500 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/vinagre-de-vino-tinto-500-ml.webp"
+  },
+  {
+    "id": "granos-galleta-molida-200-g",
+    "nombre": "Galleta Molida 200 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/galleta-molida-200-g.webp"
+  },
+  {
+    "id": "granos-galleta-molida-400-g",
+    "nombre": "Galleta Molida 400 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/galleta-molida-400-g.webp"
+  },
+  {
+    "id": "granos-maiz-pororo-200-g",
+    "nombre": "Maiz Pororo 200 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/maiz-pororo-200-g.webp"
+  },
+  {
+    "id": "granos-maiz-pororo-400-g",
+    "nombre": "Maiz Pororo 400 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/maiz-pororo-400-g.webp"
+  },
+  {
+    "id": "granos-poroto-200-g",
+    "nombre": "Poroto 200 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/poroto-200-g.webp"
+  },
+  {
+    "id": "granos-poroto-400-g",
+    "nombre": "Poroto 400 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/poroto-400-g.webp"
+  },
+  {
+    "id": "jugos-jugo-concentrado-de-frutilla-900-ml",
+    "nombre": "Jugo Concentrado De Frutilla 900 ml",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-concentrado-de-frutilla-900-ml.webp"
+  },
+  {
+    "id": "jugos-jugo-concentrado-de-naranja-900-ml",
+    "nombre": "Jugo Concentrado De Naranja 900 ml",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-concentrado-de-naranja-900-ml.webp"
+  },
+  {
+    "id": "jugos-jugo-concentrado-de-pina-900-ml",
+    "nombre": "Jugo Concentrado De Piña 900 ml",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-concentrado-de-pina-900-ml.webp"
+  },
+  {
+    "id": "jugos-jugo-concentrado-de-pomelo-900-ml",
+    "nombre": "Jugo Concentrado De Pomelo 900 ml",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-concentrado-de-pomelo-900-ml.webp"
+  },
+  {
+    "id": "jugos-jugo-twist-citrus-2-l",
+    "nombre": "Jugo Twist Citrus 2 L",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-twist-citrus-2-l.webp"
+  },
+  {
+    "id": "jugos-jugo-twist-citrus-480-ml",
+    "nombre": "Jugo Twist Citrus 480 ml",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-twist-citrus-480-ml.webp"
+  },
+  {
+    "id": "jugos-jugo-twist-energy-2-l",
+    "nombre": "Jugo Twist Energy 2 L",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-twist-energy-2-l.webp"
+  },
+  {
+    "id": "jugos-jugo-twist-energy-480-ml",
+    "nombre": "Jugo Twist Energy 480 ml",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-twist-energy-480-ml.webp"
+  },
+  {
+    "id": "jugos-jugo-twist-nectar-2-l",
+    "nombre": "Jugo Twist Nectar 2 L",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-twist-nectar-2-l.webp"
+  },
+  {
+    "id": "jugos-jugo-twist-nectar-480-ml",
+    "nombre": "Jugo Twist Nectar 480 ml",
+    "categoria": "jugos",
+    "imagen": "/images/imagenes/jugos/jugo-twist-nectar-480-ml.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-light-economica-230-g",
+    "nombre": "Mermelada De Ciruela Light Economica 230 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-light-economica-400-g",
+    "nombre": "Mermelada De Ciruela Light Economica 400 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-light-en-frasco-380-g",
+    "nombre": "Mermelada De Ciruela Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-light-sachet-250-g",
+    "nombre": "Mermelada De Ciruela Light Sachet 250 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-tradicional-economica-240-g",
+    "nombre": "Mermelada De Ciruela Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-tradicional-economica-450-g",
+    "nombre": "Mermelada De Ciruela Tradicional Economica 450 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-tradicional-economica-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Ciruela Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "zero",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-economica-230-g",
+    "nombre": "Mermelada De Frutilla Light Economica 230 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-economica-400-g",
+    "nombre": "Mermelada De Frutilla Light Economica 400 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-en-frasco-380-g",
+    "nombre": "Mermelada De Frutilla Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-sachet-250-g",
+    "nombre": "Mermelada De Frutilla Light Sachet 250 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-tradicional-economica-240-g",
+    "nombre": "Mermelada De Frutilla Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-tradicional-economica-450-g",
+    "nombre": "Mermelada De Frutilla Tradicional Economica 450 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-tradicional-economica-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Frutilla Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "zero",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-economica-230-g",
+    "nombre": "Mermelada De Guayaba Light Economica 230 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-economica-400-g",
+    "nombre": "Mermelada De Guayaba Light Economica 400 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-en-frasco-380-g",
+    "nombre": "Mermelada De Guayaba Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-sachet-250-g",
+    "nombre": "Mermelada De Guayaba Light Sachet 250 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-1-kg",
+    "nombre": "Mermelada De Guayaba Tradicional 1 kg",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-1-kg.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-250-g",
+    "nombre": "Mermelada De Guayaba Tradicional 250 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-500-g",
+    "nombre": "Mermelada De Guayaba Tradicional 500 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-500-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-750-g",
+    "nombre": "Mermelada De Guayaba Tradicional 750 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-750-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-economica-240-g",
+    "nombre": "Mermelada De Guayaba Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-economica-450-g",
+    "nombre": "Mermelada De Guayaba Tradicional Economica 450 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-economica-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Guayaba Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "zero",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-light-economica-230-g",
+    "nombre": "Mermelada De Naranja Light Economica 230 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-light-economica-400-g",
+    "nombre": "Mermelada De Naranja Light Economica 400 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-light-en-frasco-380-g",
+    "nombre": "Mermelada De Naranja Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "light",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-tradicional-450-g",
+    "nombre": "Mermelada De Naranja Tradicional 450 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-tradicional-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-tradicional-economica-240-g",
+    "nombre": "Mermelada De Naranja Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "linea": "tradicional",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Naranja Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "linea": "zero",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-zero-en-frasco-380-g.webp"
+  }
+]

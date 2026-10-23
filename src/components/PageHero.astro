@@ -1,0 +1,22 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
+const { eyebrow = 'Dul-Cesar', title, description, image } = Astro.props;
+---
+
+<section class="relative isolate min-h-[28rem] overflow-hidden text-white">
+  <img src={image} alt="" class="absolute inset-0 -z-20 h-full w-full object-cover" />
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-[#641316]/95 via-red-800/80 to-orange-700/35"></div>
+  <div class="container-site flex min-h-[28rem] items-center py-16">
+    <div class="max-w-3xl reveal">
+      <span class="eyebrow">{eyebrow}</span>
+      <h1 class="mt-5 font-display text-5xl leading-tight sm:text-6xl lg:text-7xl">{title}</h1>
+      <p class="mt-5 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">{description}</p>
+    </div>
+  </div>
+</section>

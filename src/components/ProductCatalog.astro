@@ -1,0 +1,193 @@
+---
+import products from '../data/productos.json';
+
+const categories = [
+  {
+    slug: 'mermeladas',
+    name: 'Mermeladas',
+    description: 'Tradicionales, light y zero',
+    tone: 'from-red-700 to-rose-500',
+  },
+  {
+    slug: 'aderezos',
+    name: 'Aderezos',
+    description: 'Salsas y vinagres para cada mesa',
+    tone: 'from-orange-700 to-red-500',
+  },
+  {
+    slug: 'jugos',
+    name: 'Jugos',
+    description: 'Concentrados y líneas Twist',
+    tone: 'from-amber-600 to-orange-500',
+  },
+  {
+    slug: 'granos',
+    name: 'Granos',
+    description: 'Clásicos para tu despensa',
+    tone: 'from-yellow-700 to-amber-500',
+  },
+];
+
+const counts = Object.fromEntries(
+  categories.map((category) => [
+    category.slug,
+    products.filter((product) => product.categoria === category.slug).length,
+  ]),
+);
+---
+
+<section id="productos" class="section bg-red-50/70">
+  <div class="container-site">
+    <div class="mx-auto mb-12 max-w-3xl text-center reveal">
+      <span class="font-extrabold uppercase tracking-[.18em] text-red-700">Nuestro catálogo</span>
+      <h2 class="section-title mt-3">Sabores para cada momento</h2>
+      <p class="mt-5 text-lg text-neutral-600">
+        Explorá nuestras familias de productos. Encontrá todas las presentaciones disponibles en un
+        catálogo rápido y fácil de consultar.
+      </p>
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        categories.map((category) => (
+          <button
+            type="button"
+            data-open-catalog={category.slug}
+            class:list={[
+              'group min-h-60 rounded-[2rem] bg-gradient-to-br p-7 text-left text-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl',
+              category.tone,
+            ]}
+          >
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-white/20 text-2xl font-black">
+              {category.name.charAt(0)}
+            </span>
+            <h3 class="mt-8 font-display text-3xl">{category.name}</h3>
+            <p class="mt-2 text-sm text-white/80">{category.description}</p>
+            <span class="mt-5 inline-flex items-center gap-2 text-sm font-extrabold">
+              Ver {counts[category.slug]} productos <span aria-hidden="true">→</span>
+            </span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<dialog id="product-catalog" class="h-[min(90vh,54rem)] w-[min(94vw,76rem)] rounded-[2rem] bg-white shadow-2xl">
+  <div class="flex h-full flex-col">
+    <header class="flex items-center justify-between gap-4 border-b border-red-100 px-5 py-4 sm:px-7">
+      <div>
+        <p class="text-xs font-black uppercase tracking-[.18em] text-red-700">Catálogo Dul-Cesar</p>
+        <h2 id="catalog-title" class="font-display text-3xl">Productos</h2>
+      </div>
+      <button
+        id="close-catalog"
+        type="button"
+        aria-label="Cerrar catálogo"
+        class="grid h-11 w-11 place-items-center rounded-full bg-red-50 text-2xl font-bold text-red-700 hover:bg-red-100"
+      >
+        ×
+      </button>
+    </header>
+
+    <div class="border-b border-neutral-100 p-4 sm:px-7">
+      <label class="relative block">
+        <span class="sr-only">Buscar productos</span>
+        <input
+          id="catalog-search"
+          type="search"
+          placeholder="Buscar por nombre o presentación…"
+          class="w-full rounded-full border border-neutral-200 bg-neutral-50 px-5 py-3 pr-12 font-semibold focus:border-red-500"
+        />
+        <span aria-hidden="true" class="absolute right-5 top-1/2 -translate-y-1/2">⌕</span>
+      </label>
+    </div>
+
+    <div class="min-h-0 flex-1 overflow-y-auto p-5 sm:p-7">
+      <p id="catalog-empty" class="hidden py-16 text-center text-neutral-500">
+        No encontramos productos con ese nombre.
+      </p>
+      <div id="catalog-grid" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          products.map((product) => (
+            <article
+              data-product
+              data-category={product.categoria}
+              data-search={product.nombre.toLowerCase()}
+              class="card overflow-hidden"
+            >
+              <img
+                src={product.imagen}
+                alt={product.nombre}
+                width="640"
+                height="480"
+                loading="lazy"
+                decoding="async"
+                class="h-52 w-full bg-neutral-100 object-cover"
+              />
+              <div class="p-5">
+                <p class="text-xs font-black uppercase tracking-wider text-red-700">{product.categoria}</p>
+                <h3 class="mt-1 text-lg font-black leading-snug">{product.nombre}</h3>
+                <a
+                  href={`mailto:info@dulcesar.com?subject=${encodeURIComponent(`Consulta sobre ${product.nombre}`)}`}
+                  class="mt-4 inline-flex font-extrabold text-red-700 hover:text-red-900"
+                >
+                  Consultar producto →
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>('#product-catalog');
+  const closeButton = document.querySelector<HTMLButtonElement>('#close-catalog');
+  const search = document.querySelector<HTMLInputElement>('#catalog-search');
+  const title = document.querySelector<HTMLElement>('#catalog-title');
+  const empty = document.querySelector<HTMLElement>('#catalog-empty');
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-product]')];
+  let activeCategory = '';
+
+  const normalize = (value: string) =>
+    value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+
+  const filter = () => {
+    const query = normalize(search?.value ?? '');
+    let visible = 0;
+    cards.forEach((card) => {
+      const matches =
+        card.dataset.category === activeCategory &&
+        normalize(card.dataset.search ?? '').includes(query);
+      card.classList.toggle('hidden', !matches);
+      if (matches) visible += 1;
+    });
+    empty?.classList.toggle('hidden', visible > 0);
+  };
+
+  document.querySelectorAll<HTMLButtonElement>('[data-open-catalog]').forEach((button) => {
+    button.addEventListener('click', () => {
+      activeCategory = button.dataset.openCatalog ?? '';
+      const label = button.querySelector('h3')?.textContent?.trim() ?? 'Productos';
+      if (title) title.textContent = label;
+      if (search) search.value = '';
+      filter();
+      dialog?.showModal();
+      document.body.classList.add('modal-open');
+    });
+  });
+
+  const close = () => {
+    dialog?.close();
+    document.body.classList.remove('modal-open');
+  };
+  closeButton?.addEventListener('click', close);
+  dialog?.addEventListener('click', (event) => {
+    if (event.target === dialog) close();
+  });
+  dialog?.addEventListener('close', () => document.body.classList.remove('modal-open'));
+  search?.addEventListener('input', filter);
+</script>
