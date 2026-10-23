@@ -7,28 +7,32 @@ const categories = [
     name: 'Mermeladas',
     description: 'Tradicionales, light y zero',
     image: '/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-500-g.webp',
-    tone: 'from-red-900/95 via-red-800/55 to-transparent',
+    tone: 'from-red-800 to-rose-700',
+    frame: 'origin-[50%_54%] scale-[1.55] group-hover:scale-[1.62]',
   },
   {
     slug: 'aderezos',
     name: 'Aderezos',
     description: 'Salsas y vinagres para cada mesa',
     image: '/images/imagenes/aderezos/salsa-de-ajo-250-ml.webp',
-    tone: 'from-orange-950/95 via-orange-800/50 to-transparent',
+    tone: 'from-orange-800 to-red-700',
+    frame: 'origin-[50%_60%] scale-[1.28] group-hover:scale-[1.34]',
   },
   {
     slug: 'jugos',
     name: 'Jugos',
     description: 'Concentrados y líneas Twist',
     image: '/images/imagenes/jugos/jugo-twist-citrus-2-l.webp',
-    tone: 'from-amber-950/95 via-amber-700/50 to-transparent',
+    tone: 'from-amber-600 to-orange-600',
+    frame: 'origin-center scale-100 group-hover:scale-[1.04]',
   },
   {
     slug: 'granos',
     name: 'Granos',
     description: 'Clásicos para tu despensa',
     image: '/images/imagenes/granos/maiz-pororo-400-g.webp',
-    tone: 'from-yellow-950/95 via-yellow-800/50 to-transparent',
+    tone: 'from-yellow-700 to-amber-600',
+    frame: 'origin-[50%_46%] scale-100 group-hover:scale-[1.03]',
   },
 ];
 
@@ -59,18 +63,20 @@ const counts = Object.fromEntries(
           <button
             type="button"
             data-open-catalog={category.slug}
-            class="group relative isolate aspect-[3/4] overflow-hidden rounded-[1.35rem] bg-[#ececec] text-left shadow-lg ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl sm:rounded-[1.75rem]"
+            class="group flex flex-col overflow-hidden rounded-[1.35rem] bg-[#f3f3f3] text-left shadow-lg ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl sm:rounded-[1.75rem]"
           >
-            <img
-              src={category.image}
-              alt=""
-              width="533"
-              height="800"
-              loading="lazy"
-              decoding="async"
-              class="absolute inset-0 h-full w-full origin-center scale-125 object-contain p-2 transition duration-500 group-hover:scale-150 sm:p-4"
-            />
-            <span class:list={['absolute inset-x-0 bottom-0 bg-gradient-to-t p-3 pt-16 text-white sm:p-5 sm:pt-20', category.tone]}>
+            <span class="relative block aspect-[2/3] overflow-hidden bg-[#f2f2f2]">
+              <img
+                src={category.image}
+                alt=""
+                width="800"
+                height="1200"
+                loading="lazy"
+                decoding="async"
+                class:list={['h-full w-full object-cover transition duration-500', category.frame]}
+              />
+            </span>
+            <span class:list={['block bg-gradient-to-br p-3 text-white sm:p-5', category.tone]}>
               <span class="block font-display text-[1.65rem] leading-none sm:text-3xl">{category.name}</span>
               <span class="mt-1 hidden text-sm text-white/85 sm:block">{category.description}</span>
               <span class="mt-1.5 inline-flex items-center gap-1 text-xs font-extrabold sm:mt-2 sm:text-sm">
@@ -156,7 +162,7 @@ const counts = Object.fromEntries(
                   height="800"
                   loading="lazy"
                   decoding="async"
-                  class="h-full w-full origin-center scale-110 object-contain p-1 sm:p-2"
+                  class="h-full w-full object-contain p-2"
                 />
               </span>
               <div class="flex flex-1 flex-col p-3 sm:p-4">
