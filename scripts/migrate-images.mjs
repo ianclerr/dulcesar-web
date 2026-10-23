@@ -1,8 +1,21 @@
-import { promises as fs } from 'node:fs';
+import { existsSync, promises as fs } from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 
-const sourceRoot = path.resolve('../web-ecommerce-dulcesar/public/images');
+const sourceCandidates = [
+  process.env.DULCESAR_LEGACY_IMAGES,
+  path.resolve('../web-ecommerce-dulcesar/public/images'),
+  'C:/xampp/htdocs/web-ecommerce-dulcesar/public/images',
+].filter(Boolean);
+const sourceRoot = sourceCandidates.find((candidate) => existsSync(candidate));
+
+if (!sourceRoot) {
+  throw new Error(
+    'No se encontró la carpeta de imágenes del proyecto anterior. ' +
+      'Definí DULCESAR_LEGACY_IMAGES con su ruta absoluta.',
+  );
+}
+
 const outputRoot = path.resolve('public/images');
 const productsRoot = path.join(sourceRoot, 'imagenes');
 const productCategories = new Set(['aderezos', 'granos', 'jugos', 'mermeladas']);

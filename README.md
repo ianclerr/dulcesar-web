@@ -19,6 +19,9 @@ El sitio estará disponible en `http://localhost:4321`.
 - `npm run preview`: previsualiza el build.
 - `npm run images:migrate`: importa y optimiza las imágenes desde el proyecto Laravel.
 
+El importador detecta automáticamente el proyecto anterior en XAMPP. Si se mueve a otra ubicación,
+se puede indicar la carpeta de imágenes con la variable `DULCESAR_LEGACY_IMAGES`.
+
 ## Rutas
 
 - `/`: inicio y catálogo.
