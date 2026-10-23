@@ -32,11 +32,14 @@ import PageHero from '../components/PageHero.astro';
         </p>
       </article>
       <article class="card reveal p-7">
-        <span class="text-3xl" aria-hidden="true">✉</span>
-        <h2 class="mt-4 font-display text-3xl">Correo</h2>
-        <p class="mt-3 text-neutral-600">Respondemos consultas generales y comerciales.</p>
-        <a class="mt-3 inline-block font-extrabold text-red-700" href="mailto:info@dulcesar.com">
-          info@dulcesar.com
+        <span class="text-3xl" aria-hidden="true">☎</span>
+        <h2 class="mt-4 font-display text-3xl">Atención</h2>
+        <p class="mt-3 text-neutral-600">Consultas generales y comerciales.</p>
+        <a class="mt-3 block font-extrabold text-red-700" href="tel:+59521575776">
+          (021) 575-776
+        </a>
+        <a class="mt-1 block font-extrabold text-red-700" href="mailto:info@dulcesar.com.py">
+          info@dulcesar.com.py
         </a>
       </article>
     </div>
@@ -131,7 +134,7 @@ import PageHero from '../components/PageHero.astro';
       const form = new FormData(event.currentTarget as HTMLFormElement);
       const subject = `[Web] ${form.get('motivo')}`;
       const body = `Nombre: ${form.get('nombre')}\nCorreo: ${form.get('correo')}\n\n${form.get('mensaje')}`;
-      window.location.href = `mailto:info@dulcesar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:info@dulcesar.com.py?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   </script>
 </BaseLayout>

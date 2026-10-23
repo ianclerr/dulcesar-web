@@ -30,5 +30,5 @@ El sitio estará disponible en `http://localhost:4321`.
 ## Datos pendientes de validar
 
 Antes de publicar deben confirmarse el dominio definitivo, las direcciones de correo
-`info@dulcesar.com` y `ventas@dulcesar.com`, y cualquier canal oficial de WhatsApp o redes sociales.
+`info@dulcesar.com.py` y `ventas@dulcesar.com`, y cualquier canal oficial de WhatsApp o redes sociales.
 No se trasladaron los números ni enlaces sociales de prueba del proyecto anterior.
