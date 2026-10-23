@@ -4,22 +4,42 @@ import PageHero from '../components/PageHero.astro';
 
 const recipes = [
   {
+    id: 'brownies-clasicos',
     title: 'Brownies clásicos',
     image: '/images/brownies.webp',
-    description: 'Húmedos, intensos y con una cubierta delicadamente crocante.',
-    time: '40 min',
+    description: 'Brownies de cacao Dul-Cesar, húmedos por dentro y fáciles de preparar.',
+    time: '30 min',
+    product: 'Cacao Dul-Cesar',
+    ingredients: [
+      '200 g de Cacao Dul-Cesar',
+      '150 g de Azúcar Dul-Cesar',
+      '3 huevos',
+      '200 g de harina',
+    ],
+    steps: [
+      'Mezclá el cacao Dul-Cesar, la harina y el azúcar.',
+      'Incorporá los huevos y los demás ingredientes líquidos.',
+      'Llevá al horno a 180 °C durante 25 minutos.',
+    ],
   },
   {
+    id: 'galletas-de-avena',
     title: 'Galletas de avena',
     image: '/images/galletadeavena.webp',
-    description: 'Crujientes, simples y perfectas para acompañar el café.',
+    description: 'Galletas crujientes con avena y Azúcar Dul-Cesar para compartir en la merienda.',
     time: '30 min',
-  },
-  {
-    title: 'Muffins de chocolate',
-    image: '/images/muffins.webp',
-    description: 'Esponjosos y prácticos para una merienda compartida.',
-    time: '35 min',
+    product: 'Azúcar Dul-Cesar',
+    ingredients: [
+      '150 g de Azúcar Dul-Cesar',
+      '200 g de avena',
+      '150 g de harina',
+      '100 g de mantequilla',
+    ],
+    steps: [
+      'Mezclá la avena, la harina y el azúcar.',
+      'Incorporá la mantequilla derretida hasta integrar.',
+      'Formá las galletas y horneá a 180 °C durante 15 minutos.',
+    ],
   },
 ];
 ---
@@ -41,34 +61,36 @@ const recipes = [
       <article class="card mx-auto grid max-w-6xl overflow-hidden lg:grid-cols-2">
         <img
           src="/images/brownies.webp"
-          alt="Brownies clásicos"
+          alt="Torta de chocolate premium"
           width="900"
           height="900"
           class="h-full min-h-[28rem] w-full object-cover"
         />
         <div class="p-7 sm:p-10">
           <span class="font-black uppercase tracking-[.18em] text-red-700">Receta destacada</span>
-          <h1 class="mt-3 font-display text-5xl">Brownies clásicos</h1>
+          <h1 class="mt-3 font-display text-5xl">Torta de chocolate premium</h1>
           <p class="mt-4 text-neutral-600">
-            Una receta intensa y fácil para acompañar meriendas, celebraciones o ese antojo de algo dulce.
+            Una torta suave y chocolatosa preparada con Cacao y Azúcar Dul-Cesar. Rinde 8 porciones
+            y está lista en aproximadamente 45 minutos.
           </p>
 
           <h2 class="mt-8 text-xl font-black">Ingredientes</h2>
           <ul class="mt-3 grid gap-2 text-neutral-700 sm:grid-cols-2">
-            <li>200 g de harina</li>
-            <li>150 g de azúcar</li>
-            <li>80 g de cacao</li>
+            <li><strong class="text-red-700">200 g de Cacao Dul-Cesar</strong></li>
+            <li><strong class="text-red-700">150 g de Azúcar Dul-Cesar</strong></li>
             <li>3 huevos</li>
-            <li>120 g de manteca</li>
-            <li>1 cucharadita de vainilla</li>
+            <li>200 g de harina</li>
+            <li>100 g de mantequilla</li>
+            <li>120 ml de leche</li>
           </ul>
 
           <h2 class="mt-8 text-xl font-black">Preparación</h2>
           <ol class="mt-3 grid gap-3 text-neutral-700">
-            <li><strong class="text-red-700">1.</strong> Precalentá el horno a 180 °C y prepará un molde.</li>
-            <li><strong class="text-red-700">2.</strong> Mezclá harina, cacao y azúcar en un recipiente.</li>
-            <li><strong class="text-red-700">3.</strong> Incorporá huevos, manteca derretida y vainilla.</li>
-            <li><strong class="text-red-700">4.</strong> Horneá de 25 a 30 minutos y dejá enfriar antes de cortar.</li>
+            <li><strong class="text-red-700">1.</strong> Precalentá el horno a 180 °C y engrasá un molde redondo.</li>
+            <li><strong class="text-red-700">2.</strong> Mezclá el cacao Dul-Cesar con la harina y el azúcar.</li>
+            <li><strong class="text-red-700">3.</strong> Incorporá los huevos batidos y la mantequilla derretida.</li>
+            <li><strong class="text-red-700">4.</strong> Agregá la leche gradualmente hasta obtener una masa homogénea.</li>
+            <li><strong class="text-red-700">5.</strong> Horneá entre 35 y 40 minutos, hasta que al insertar un palillo salga limpio.</li>
           </ol>
         </div>
       </article>
@@ -81,10 +103,10 @@ const recipes = [
         <span class="font-extrabold uppercase tracking-[.18em] text-red-700">Más ideas</span>
         <h2 class="section-title mt-3">Recetas para guardar</h2>
       </div>
-      <div class="grid gap-6 md:grid-cols-3">
+      <div class="grid gap-7 lg:grid-cols-2">
         {
           recipes.map((recipe) => (
-            <article class="card reveal overflow-hidden">
+            <article id={recipe.id} class="card reveal overflow-hidden">
               <img
                 src={recipe.image}
                 alt={recipe.title}
@@ -101,6 +123,32 @@ const recipes = [
                   </span>
                 </div>
                 <p class="mt-3 text-neutral-600">{recipe.description}</p>
+                <p class="mt-4 text-sm font-black uppercase tracking-wider text-red-700">
+                  Producto destacado: {recipe.product}
+                </p>
+
+                <details class="group mt-6 border-t border-red-100 pt-5">
+                  <summary class="flex cursor-pointer list-none items-center justify-between font-black text-red-700">
+                    Ver receta completa
+                    <span class="text-xl transition group-open:rotate-45" aria-hidden="true">+</span>
+                  </summary>
+                  <div class="mt-5 grid gap-6 sm:grid-cols-2">
+                    <div>
+                      <h4 class="font-black">Ingredientes</h4>
+                      <ul class="mt-3 grid gap-2 text-sm text-neutral-600">
+                        {recipe.ingredients.map((ingredient) => <li>• {ingredient}</li>)}
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 class="font-black">Preparación</h4>
+                      <ol class="mt-3 grid gap-2 text-sm text-neutral-600">
+                        {recipe.steps.map((step, index) => (
+                          <li><strong class="text-red-700">{index + 1}.</strong> {step}</li>
+                        ))}
+                      </ol>
+                    </div>
+                  </div>
+                </details>
               </div>
             </article>
           ))
