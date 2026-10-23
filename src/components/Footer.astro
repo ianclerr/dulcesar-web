@@ -1,48 +1,88 @@
+---
+const explore = [
+  { href: '/nosotros', label: 'Nuestra historia' },
+  { href: '/#productos', label: 'Productos' },
+  { href: '/recetario', label: 'Recetario' },
+  { href: '/distribuidores', label: 'Distribuidores' },
+  { href: '/contacto', label: 'Contacto' },
+];
+---
+
 <footer class="bg-[#2a1210] text-white">
-  <div class="container-site grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
-    <div class="lg:col-span-2">
+  <div class="container-site grid gap-8 py-10 sm:grid-cols-2 sm:gap-10 sm:py-14 lg:grid-cols-[1.5fr_1fr_1.2fr_1fr]">
+    <div class="sm:col-span-2 lg:col-span-1">
       <img
         src="/images/logos/logo-blanco.webp"
         alt="Dul-Cesar"
         width="180"
         height="72"
         loading="lazy"
-        class="mb-5 h-16 w-auto object-contain"
+        class="mb-4 h-12 w-auto object-contain sm:h-16"
       />
-      <p class="max-w-lg text-white/70">
+      <p class="max-w-sm text-sm leading-relaxed text-white/70 sm:text-base">
         Más de 40 años elaborando sabores con identidad paraguaya, ingredientes seleccionados y
         el compromiso de una empresa familiar.
       </p>
+      <a
+        href="https://www.instagram.com/productos_dulcesar/"
+        target="_blank"
+        rel="noopener"
+        class="mt-5 inline-flex min-h-11 items-center gap-3 rounded-full bg-white/10 py-1.5 pl-1.5 pr-5 font-bold transition-colors hover:bg-white/20"
+      >
+        <span class="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-orange-500 via-red-600 to-fuchsia-700">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </span>
+        @productos_dulcesar
+      </a>
     </div>
 
     <div>
-      <h2 class="mb-4 font-extrabold">Explorá</h2>
-      <ul class="space-y-2 text-white/70">
-        <li><a class="hover:text-white" href="/nosotros">Nuestra historia</a></li>
-        <li><a class="hover:text-white" href="/#productos">Productos</a></li>
-        <li><a class="hover:text-white" href="/recetario">Recetario</a></li>
-        <li><a class="hover:text-white" href="/distribuidores">Distribuidores</a></li>
+      <h2 class="mb-3 text-sm font-extrabold uppercase tracking-[.16em] text-orange-300">Explorá</h2>
+      <ul class="grid gap-0.5 text-white/75">
+        {
+          explore.map((link) => (
+            <li>
+              <a class="inline-flex min-h-10 items-center py-1 transition-colors hover:text-white" href={link.href}>
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
 
     <div>
-      <h2 class="mb-4 font-extrabold">Contacto</h2>
-      <address class="space-y-2 text-white/70 not-italic">
-        <p>Celsa Speratti y De la Honestidad 1372</p>
-        <p>San Lorenzo, Paraguay</p>
-        <a class="block hover:text-white" href="tel:+59521575776">(021) 575-776</a>
-        <a class="block hover:text-white" href="tel:+595974699585">(0974) 699-585</a>
-        <a class="block hover:text-white" href="mailto:info@dulcesar.com.py">info@dulcesar.com.py</a>
-        <a class="block hover:text-white" href="https://www.instagram.com/productos_dulcesar/" target="_blank" rel="noopener">
-          @productos_dulcesar
+      <h2 class="mb-3 text-sm font-extrabold uppercase tracking-[.16em] text-orange-300">Contacto</h2>
+      <address class="grid text-white/75 not-italic">
+        <p class="pb-2 leading-relaxed">Celsa Speratti y De la Honestidad 1372<br />San Lorenzo, Paraguay</p>
+        <a class="inline-flex min-h-10 items-center py-1 transition-colors hover:text-white" href="tel:+59521575776">(021) 575-776</a>
+        <a class="inline-flex min-h-10 items-center py-1 transition-colors hover:text-white" href="tel:+595974699585">(0974) 699-585</a>
+        <a class="inline-flex min-h-10 items-center break-all py-1 transition-colors hover:text-white" href="mailto:info@dulcesar.com.py">
+          info@dulcesar.com.py
         </a>
-        <p>Lunes a viernes · 07:00 a 17:00</p>
       </address>
+    </div>
+
+    <div>
+      <h2 class="mb-3 text-sm font-extrabold uppercase tracking-[.16em] text-orange-300">Horarios</h2>
+      <p class="text-white/75">Lunes a viernes<br />07:00 a 17:00</p>
+      <a
+        class="btn mt-5 w-full border border-white/25 bg-white/5 text-white hover:bg-white/15 sm:w-auto"
+        href="https://www.google.com/maps/search/?api=1&query=Productos+Dul-Cesar+San+Lorenzo+Paraguay"
+        target="_blank"
+        rel="noopener"
+      >
+        Cómo llegar
+      </a>
     </div>
   </div>
 
   <div class="border-t border-white/10">
-    <div class="container-site flex flex-col gap-2 py-5 text-sm text-white/55 sm:flex-row sm:justify-between">
+    <div class="container-site flex flex-col gap-2 py-5 text-xs leading-relaxed text-white/55 sm:flex-row sm:justify-between sm:text-sm">
       <p>© {new Date().getFullYear()} Grupo Dul-Cesar Industrial y Comercial S.A. Todos los derechos reservados.</p>
       <p>Industria paraguaya</p>
     </div>

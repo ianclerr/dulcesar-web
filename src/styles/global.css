@@ -18,12 +18,19 @@
 
 :root {
   color-scheme: light;
-  --header-height: 4.75rem;
+  --header-height: 4rem;
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --header-height: 4.75rem;
+  }
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 1rem);
+  overflow-x: clip;
 }
 
 body {
@@ -33,6 +40,7 @@ body {
   color: #262626;
   font-family: var(--font-body);
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 body.menu-open,
@@ -59,13 +67,50 @@ textarea {
 }
 
 .section {
-  padding-block: clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(2.75rem, 6vw, 7rem);
 }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 5vw, 4.25rem);
+  font-size: clamp(2.05rem, 7.2vw, 4.25rem);
   line-height: 1.05;
+}
+
+.kicker {
+  display: block;
+  color: #b91c1c;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes menu-in {
+  from {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.menu-panel {
+  animation: menu-in .28s ease-out;
+}
+
+.menu-backdrop {
+  animation: fade-in .2s ease-out;
 }
 
 .eyebrow {
@@ -82,36 +127,38 @@ textarea {
   text-transform: uppercase;
 }
 
-.btn {
-  display: inline-flex;
-  min-height: 3rem;
-  align-items: center;
-  justify-content: center;
-  gap: .55rem;
-  border-radius: 999px;
-  padding: .75rem 1.35rem;
-  font-weight: 800;
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-}
+@layer components {
+  .btn {
+    display: inline-flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: .55rem;
+    border-radius: 999px;
+    padding: .75rem 1.35rem;
+    font-weight: 800;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
+  .btn:hover {
+    transform: translateY(-2px);
+  }
 
-.btn-primary {
-  background: #c82026;
-  color: white;
-  box-shadow: 0 14px 35px rgb(200 32 38 / .24);
-}
+  .btn-primary {
+    background: #c82026;
+    color: white;
+    box-shadow: 0 14px 35px rgb(200 32 38 / .24);
+  }
 
-.btn-primary:hover {
-  background: #a9161b;
-}
+  .btn-primary:hover {
+    background: #a9161b;
+  }
 
-.btn-light {
-  background: white;
-  color: #b91c1c;
-  box-shadow: 0 14px 35px rgb(0 0 0 / .14);
+  .btn-light {
+    background: white;
+    color: #b91c1c;
+    box-shadow: 0 14px 35px rgb(0 0 0 / .14);
+  }
 }
 
 .card {

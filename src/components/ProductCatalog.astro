@@ -6,25 +6,29 @@ const categories = [
     slug: 'mermeladas',
     name: 'Mermeladas',
     description: 'Tradicionales, light y zero',
-    tone: 'from-red-700 to-rose-500',
+    image: '/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-500-g.webp',
+    tone: 'from-red-900/95 via-red-800/55 to-transparent',
   },
   {
     slug: 'aderezos',
     name: 'Aderezos',
     description: 'Salsas y vinagres para cada mesa',
-    tone: 'from-orange-700 to-red-500',
+    image: '/images/imagenes/aderezos/salsa-de-ajo-250-ml.webp',
+    tone: 'from-orange-950/95 via-orange-800/50 to-transparent',
   },
   {
     slug: 'jugos',
     name: 'Jugos',
     description: 'Concentrados y líneas Twist',
-    tone: 'from-amber-600 to-orange-500',
+    image: '/images/imagenes/jugos/jugo-twist-citrus-2-l.webp',
+    tone: 'from-amber-950/95 via-amber-700/50 to-transparent',
   },
   {
     slug: 'granos',
     name: 'Granos',
     description: 'Clásicos para tu despensa',
-    tone: 'from-yellow-700 to-amber-500',
+    image: '/images/imagenes/granos/maiz-pororo-400-g.webp',
+    tone: 'from-yellow-950/95 via-yellow-800/50 to-transparent',
   },
 ];
 
@@ -38,33 +42,40 @@ const counts = Object.fromEntries(
 
 <section id="productos" class="section bg-red-50/70">
   <div class="container-site">
-    <div class="mx-auto mb-12 max-w-3xl text-center reveal">
-      <span class="font-extrabold uppercase tracking-[.18em] text-red-700">Nuestro catálogo</span>
-      <h2 class="section-title mt-3">Sabores para cada momento</h2>
-      <p class="mt-5 text-lg text-neutral-600">
-        Explorá nuestras familias de productos. Encontrá todas las presentaciones disponibles en un
-        catálogo rápido y fácil de consultar.
+    <div class="mb-6 flex flex-col gap-3 sm:mb-10 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
+      <div class="max-w-2xl reveal">
+        <span class="kicker">Nuestro catálogo</span>
+        <h2 class="section-title mt-3">Sabores para cada momento</h2>
+      </div>
+      <p class="max-w-md text-neutral-600 reveal sm:text-lg">
+        Más de 200 productos en mermeladas, dulces, aderezos, salsas, vinagres y más. Elegí una
+        familia para ver todas sus presentaciones.
       </p>
     </div>
 
-    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
       {
         categories.map((category) => (
           <button
             type="button"
             data-open-catalog={category.slug}
-            class:list={[
-              'group min-h-60 rounded-[2rem] bg-gradient-to-br p-7 text-left text-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl',
-              category.tone,
-            ]}
+            class="group relative isolate aspect-[3/4] overflow-hidden rounded-[1.35rem] bg-[#ececec] text-left shadow-lg ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl sm:rounded-[1.75rem]"
           >
-            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-white/20 text-2xl font-black">
-              {category.name.charAt(0)}
-            </span>
-            <h3 class="mt-8 font-display text-3xl">{category.name}</h3>
-            <p class="mt-2 text-sm text-white/80">{category.description}</p>
-            <span class="mt-5 inline-flex items-center gap-2 text-sm font-extrabold">
-              Ver {counts[category.slug]} productos <span aria-hidden="true">→</span>
+            <img
+              src={category.image}
+              alt=""
+              width="533"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              class="absolute inset-0 h-full w-full origin-center scale-125 object-contain p-2 transition duration-500 group-hover:scale-150 sm:p-4"
+            />
+            <span class:list={['absolute inset-x-0 bottom-0 bg-gradient-to-t p-3 pt-16 text-white sm:p-5 sm:pt-20', category.tone]}>
+              <span class="block font-display text-[1.65rem] leading-none sm:text-3xl">{category.name}</span>
+              <span class="mt-1 hidden text-sm text-white/85 sm:block">{category.description}</span>
+              <span class="mt-1.5 inline-flex items-center gap-1 text-xs font-extrabold sm:mt-2 sm:text-sm">
+                Ver {counts[category.slug]} productos <span aria-hidden="true">→</span>
+              </span>
             </span>
           </button>
         ))
@@ -73,9 +84,13 @@ const counts = Object.fromEntries(
   </div>
 </section>
 
-<dialog id="product-catalog" class="h-[min(90vh,54rem)] w-[min(94vw,76rem)] rounded-[2rem] bg-white shadow-2xl">
+<dialog
+  id="product-catalog"
+  aria-labelledby="catalog-title"
+  class="m-0 h-dvh max-h-none w-screen max-w-none bg-white p-0 shadow-2xl sm:m-auto sm:h-[min(90vh,54rem)] sm:w-[min(94vw,76rem)] sm:rounded-[2rem]"
+>
   <div class="flex h-full flex-col">
-    <header class="flex items-center justify-between gap-4 border-b border-red-100 px-5 py-4 sm:px-7">
+    <header class="flex items-center justify-between gap-4 px-4 pb-3 pt-[max(1rem,env(safe-area-inset-top))] sm:px-7 sm:pt-5">
       <div>
         <p class="text-xs font-black uppercase tracking-[.18em] text-red-700">Catálogo Dul-Cesar</p>
         <h2 id="catalog-title" class="font-display text-3xl">Productos</h2>
@@ -84,13 +99,30 @@ const counts = Object.fromEntries(
         id="close-catalog"
         type="button"
         aria-label="Cerrar catálogo"
-        class="grid h-11 w-11 place-items-center rounded-full bg-red-50 text-2xl font-bold text-red-700 hover:bg-red-100"
+        class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-red-50 text-2xl font-bold text-red-700 hover:bg-red-100"
       >
         ×
       </button>
     </header>
 
-    <div class="border-b border-neutral-100 p-4 sm:px-7">
+    <div class="no-scrollbar flex gap-2 overflow-x-auto px-4 pb-3 sm:px-7" role="tablist" aria-label="Categorías">
+      {
+        categories.map((category) => (
+          <button
+            type="button"
+            data-catalog-tab={category.slug}
+            role="tab"
+            aria-selected="false"
+            class="shrink-0 rounded-full border border-red-200 px-4 py-2 text-sm font-extrabold text-red-800 transition-colors hover:bg-red-50 aria-selected:border-red-700 aria-selected:bg-red-700 aria-selected:text-white"
+          >
+            {category.name}
+            <span class="ml-1 opacity-70">{counts[category.slug]}</span>
+          </button>
+        ))
+      }
+    </div>
+
+    <div class="border-y border-neutral-100 px-4 py-3 sm:px-7">
       <label class="relative block">
         <span class="sr-only">Buscar productos</span>
         <input
@@ -103,36 +135,37 @@ const counts = Object.fromEntries(
       </label>
     </div>
 
-    <div class="min-h-0 flex-1 overflow-y-auto p-5 sm:p-7">
+    <div class="min-h-0 flex-1 overflow-y-auto p-4 sm:p-7">
       <p id="catalog-empty" class="hidden py-16 text-center text-neutral-500">
         No encontramos productos con ese nombre.
       </p>
-      <div id="catalog-grid" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div id="catalog-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
         {
           products.map((product) => (
             <article
               data-product
               data-category={product.categoria}
               data-search={product.nombre.toLowerCase()}
-              class="card overflow-hidden"
+              class="card flex flex-col overflow-hidden"
             >
-              <img
-                src={product.imagen}
-                alt={product.nombre}
-                width="640"
-                height="480"
-                loading="lazy"
-                decoding="async"
-                class="h-52 w-full bg-neutral-100 object-cover"
-              />
-              <div class="p-5">
-                <p class="text-xs font-black uppercase tracking-wider text-red-700">{product.categoria}</p>
-                <h3 class="mt-1 text-lg font-black leading-snug">{product.nombre}</h3>
+              <span class="block aspect-square overflow-hidden bg-[#f1f1f1]">
+                <img
+                  src={product.imagen}
+                  alt={product.nombre}
+                  width="640"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full origin-center scale-110 object-contain p-1 sm:p-2"
+                />
+              </span>
+              <div class="flex flex-1 flex-col p-3 sm:p-4">
+                <h3 class="text-sm font-black leading-snug sm:text-base">{product.nombre}</h3>
                 <a
                   href={`mailto:info@dulcesar.com.py?subject=${encodeURIComponent(`Consulta sobre ${product.nombre}`)}`}
-                  class="mt-4 inline-flex font-extrabold text-red-700 hover:text-red-900"
+                  class="mt-auto pt-3 text-sm font-extrabold text-red-700 hover:text-red-900"
                 >
-                  Consultar producto →
+                  Consultar →
                 </a>
               </div>
             </article>
@@ -149,7 +182,9 @@ const counts = Object.fromEntries(
   const search = document.querySelector<HTMLInputElement>('#catalog-search');
   const title = document.querySelector<HTMLElement>('#catalog-title');
   const empty = document.querySelector<HTMLElement>('#catalog-empty');
+  const scroller = document.querySelector<HTMLElement>('#catalog-grid')?.parentElement;
   const cards = [...document.querySelectorAll<HTMLElement>('[data-product]')];
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('[data-catalog-tab]')];
   let activeCategory = '';
 
   const normalize = (value: string) =>
@@ -168,17 +203,30 @@ const counts = Object.fromEntries(
     empty?.classList.toggle('hidden', visible > 0);
   };
 
+  const selectCategory = (slug: string) => {
+    activeCategory = slug;
+    tabs.forEach((tab) => {
+      const active = tab.dataset.catalogTab === slug;
+      tab.setAttribute('aria-selected', String(active));
+      if (active) {
+        const label = tab.childNodes[0]?.textContent?.trim() ?? 'Productos';
+        if (title) title.textContent = label;
+      }
+    });
+    if (search) search.value = '';
+    scroller?.scrollTo({ top: 0 });
+    filter();
+  };
+
   document.querySelectorAll<HTMLButtonElement>('[data-open-catalog]').forEach((button) => {
     button.addEventListener('click', () => {
-      activeCategory = button.dataset.openCatalog ?? '';
-      const label = button.querySelector('h3')?.textContent?.trim() ?? 'Productos';
-      if (title) title.textContent = label;
-      if (search) search.value = '';
-      filter();
+      selectCategory(button.dataset.openCatalog ?? '');
       dialog?.showModal();
       document.body.classList.add('modal-open');
     });
   });
+
+  tabs.forEach((tab) => tab.addEventListener('click', () => selectCategory(tab.dataset.catalogTab ?? '')));
 
   const close = () => {
     dialog?.close();

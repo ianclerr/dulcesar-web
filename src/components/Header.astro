@@ -9,42 +9,47 @@ const links = [
 ];
 
 const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isActive = (href: string) =>
+  href !== '/#productos' && (currentPath === href || (href !== '/' && currentPath.startsWith(href)));
+const desktopLinks = links.filter((link) => link.href !== '/contacto');
 ---
 
-<header class="sticky top-0 z-50 border-b border-red-100 bg-white/95 shadow-sm backdrop-blur-lg">
-  <div class="container-site flex h-[var(--header-height)] items-center justify-between gap-6">
+<header class="sticky top-0 z-50 border-b border-red-100 bg-white/95 pt-[env(safe-area-inset-top)] shadow-sm backdrop-blur-lg">
+  <div class="container-site flex h-[var(--header-height)] items-center justify-between gap-4">
     <a href="/" aria-label="Dul-Cesar, ir al inicio" class="shrink-0">
       <img
         src="/images/logos/logo-rojo.webp"
         alt="Dul-Cesar"
         width="145"
         height="58"
-        class="h-12 w-auto object-contain"
+        class="h-9 w-auto object-contain sm:h-10 lg:h-12"
       />
     </a>
 
     <nav aria-label="Navegación principal" class="hidden items-center gap-1 lg:flex">
       {
-        links.map((link) => {
-          const active =
-            link.href !== '/#productos' &&
-            (currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href)));
-          return (
-            <a
-              href={link.href}
-              aria-current={active ? 'page' : undefined}
-              class:list={[
-                'rounded-full px-3.5 py-2 text-sm font-extrabold transition-colors',
-                active
-                  ? 'bg-red-50 text-red-700'
-                  : 'text-neutral-700 hover:bg-orange-50 hover:text-red-700',
-              ]}
-            >
-              {link.label}
-            </a>
-          );
-        })
+        desktopLinks.map((link) => (
+          <a
+            href={link.href}
+            aria-current={isActive(link.href) ? 'page' : undefined}
+            class:list={[
+              'rounded-full px-3.5 py-2 text-sm font-extrabold transition-colors',
+              isActive(link.href)
+                ? 'bg-red-50 text-red-700'
+                : 'text-neutral-700 hover:bg-orange-50 hover:text-red-700',
+            ]}
+          >
+            {link.label}
+          </a>
+        ))
       }
+      <a
+        href="/contacto"
+        aria-current={isActive('/contacto') ? 'page' : undefined}
+        class="btn btn-primary ml-3 min-h-0 px-5 py-2.5 text-sm"
+      >
+        Contacto
+      </a>
     </nav>
 
     <button
@@ -53,59 +58,116 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
       aria-label="Abrir menú"
       aria-controls="mobile-menu"
       aria-expanded="false"
-      class="grid h-11 w-11 place-items-center rounded-full bg-red-50 text-red-700 lg:hidden"
+      class="grid h-11 w-11 place-items-center rounded-full bg-red-50 text-red-700 transition-colors hover:bg-red-100 lg:hidden"
     >
       <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"></path>
       </svg>
     </button>
   </div>
+</header>
 
-  <div id="mobile-menu" class="fixed inset-0 top-[var(--header-height)] hidden bg-black/45 lg:hidden">
-    <nav
-      aria-label="Navegación móvil"
-      class="ml-auto flex h-full w-[min(88vw,24rem)] flex-col gap-2 bg-white p-6 shadow-2xl"
-    >
+<div id="mobile-menu" class="fixed inset-0 z-[60] hidden lg:hidden" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
+  <button
+    type="button"
+    data-menu-backdrop
+    aria-label="Cerrar menú"
+    class="menu-backdrop absolute inset-0 bg-[#2a1210]/50"
+  ></button>
+
+  <nav
+    aria-label="Navegación móvil"
+    class="menu-panel absolute inset-y-0 right-0 flex w-[min(21rem,90vw)] flex-col bg-white shadow-2xl"
+  >
+    <div class="flex items-center justify-between gap-3 border-b border-red-100 px-5 py-4">
+      <div>
+        <p id="mobile-menu-title" class="font-display text-[1.65rem] leading-none text-red-700">Menú</p>
+        <p class="mt-1 text-xs font-bold uppercase tracking-[.16em] text-neutral-400">Dul-Cesar</p>
+      </div>
+      <button
+        id="menu-close"
+        type="button"
+        aria-label="Cerrar menú"
+        class="grid h-11 w-11 place-items-center rounded-full bg-red-50 text-red-700 transition-colors hover:bg-red-100"
+      >
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"></path>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="flex-1 overflow-y-auto px-3 py-3">
       {
         links.map((link) => (
-          <a
-            href={link.href}
-            class="rounded-xl px-4 py-3 text-lg font-extrabold text-neutral-800 hover:bg-red-50 hover:text-red-700"
-          >
-            {link.label}
-          </a>
+          <li>
+            <a
+              href={link.href}
+              aria-current={isActive(link.href) ? 'page' : undefined}
+              class:list={[
+                'flex min-h-[3.15rem] items-center justify-between rounded-2xl px-4 text-[1.05rem] font-extrabold transition-colors',
+                isActive(link.href)
+                  ? 'bg-red-700 text-white shadow-md shadow-red-700/20'
+                  : 'text-neutral-800 hover:bg-red-50 hover:text-red-700',
+              ]}
+            >
+              {link.label}
+              <span aria-hidden="true" class="text-sm opacity-50">→</span>
+            </a>
+          </li>
         ))
       }
-      <p class="mt-auto border-t border-red-100 pt-5 text-sm text-neutral-500">
-        Sabores con tradición paraguaya desde 1982.
-      </p>
-    </nav>
-  </div>
-</header>
+    </ul>
+
+    <div class="mt-auto border-t border-red-100 bg-[#fff7f5] px-5 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+      <p class="mb-3 text-xs font-extrabold uppercase tracking-[.16em] text-red-700">Contacto</p>
+      <div class="grid gap-2">
+        <a class="flex min-h-12 items-center justify-between rounded-2xl bg-white px-4 text-sm font-extrabold text-neutral-800 shadow-sm ring-1 ring-red-100" href="tel:+59521575776">
+          (021) 575-776
+          <span class="text-xs font-bold text-red-700">Llamar</span>
+        </a>
+        <a class="flex min-h-12 items-center justify-between rounded-2xl bg-white px-4 text-sm font-extrabold text-neutral-800 shadow-sm ring-1 ring-red-100" href="tel:+595974699585">
+          (0974) 699-585
+          <span class="text-xs font-bold text-red-700">Celular</span>
+        </a>
+        <a
+          class="flex min-h-12 items-center justify-between rounded-2xl bg-white px-4 text-sm font-extrabold text-neutral-800 shadow-sm ring-1 ring-red-100"
+          href="https://www.instagram.com/productos_dulcesar/"
+          target="_blank"
+          rel="noopener"
+        >
+          @productos_dulcesar
+          <span class="text-xs font-bold text-red-700">Instagram</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
 
 <script>
   const button = document.querySelector<HTMLButtonElement>('#menu-button');
+  const closeButton = document.querySelector<HTMLButtonElement>('#menu-close');
   const menu = document.querySelector<HTMLElement>('#mobile-menu');
 
-  const closeMenu = () => {
-    menu?.classList.add('hidden');
-    document.body.classList.remove('menu-open');
-    button?.setAttribute('aria-expanded', 'false');
-    button?.setAttribute('aria-label', 'Abrir menú');
+  const setOpen = (open: boolean) => {
+    menu?.classList.toggle('hidden', !open);
+    document.body.classList.toggle('menu-open', open);
+    button?.setAttribute('aria-expanded', String(open));
+    button?.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    if (open) closeButton?.focus();
+    else button?.focus();
   };
 
-  button?.addEventListener('click', () => {
-    const opens = menu?.classList.contains('hidden');
-    menu?.classList.toggle('hidden');
-    document.body.classList.toggle('menu-open', opens);
-    button.setAttribute('aria-expanded', String(opens));
-    button.setAttribute('aria-label', opens ? 'Cerrar menú' : 'Abrir menú');
-  });
+  button?.addEventListener('click', () => setOpen(menu?.classList.contains('hidden') ?? false));
+  closeButton?.addEventListener('click', () => setOpen(false));
 
   menu?.addEventListener('click', (event) => {
-    if (event.target === menu || (event.target as Element).closest('a')) closeMenu();
+    const target = event.target as Element;
+    if (target.closest('[data-menu-backdrop]') || target.closest('a')) setOpen(false);
   });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
+    if (event.key === 'Escape') setOpen(false);
+  });
+  window.matchMedia('(min-width: 64rem)').addEventListener('change', (event) => {
+    if (event.matches) setOpen(false);
   });
 </script>

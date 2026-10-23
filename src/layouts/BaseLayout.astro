@@ -22,7 +22,7 @@ const socialImage = Astro.site ? new URL(image, Astro.site) : image;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#c82026" />
@@ -65,7 +65,7 @@ const socialImage = Astro.site ? new URL(image, Astro.site) : image;
             }
           });
         },
-        { threshold: 0.12 },
+        { threshold: 0.05, rootMargin: '0px 0px -8% 0px' },
       );
       document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
     </script>
