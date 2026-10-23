@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
+
+const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=Productos+Dul-Cesar+San+Lorenzo+Paraguay';
 ---
 
 <BaseLayout
@@ -16,36 +18,39 @@ import PageHero from '../components/PageHero.astro';
   />
 
   <section class="section pattern">
-    <div class="container-site grid gap-7 md:grid-cols-3">
-      <article class="card reveal p-7">
+    <div class="container-site grid gap-4 sm:gap-7 md:grid-cols-3">
+      <article class="card reveal p-5 sm:p-7">
         <span class="text-3xl" aria-hidden="true">⌖</span>
-        <h2 class="mt-4 font-display text-3xl">Dirección</h2>
+        <h2 class="mt-3 font-display text-2xl sm:mt-4 sm:text-3xl">Dirección</h2>
         <p class="mt-3 text-neutral-600">
           Celsa Speratti y De la Honestidad 1372<br />San Lorenzo, Paraguay
         </p>
+        <a class="mt-4 inline-flex font-extrabold text-red-700" href={mapsUrl} target="_blank" rel="noopener">
+          Cómo llegar →
+        </a>
       </article>
-      <article class="card reveal p-7">
+      <article class="card reveal p-5 sm:p-7">
         <span class="text-3xl" aria-hidden="true">◷</span>
-        <h2 class="mt-4 font-display text-3xl">Horarios</h2>
+        <h2 class="mt-3 font-display text-2xl sm:mt-4 sm:text-3xl">Horarios</h2>
         <p class="mt-3 text-neutral-600">
           Lunes a viernes<br />07:00 a 17:00
         </p>
       </article>
-      <article class="card reveal p-7">
+      <article class="card reveal p-5 sm:p-7">
         <span class="text-3xl" aria-hidden="true">☎</span>
-        <h2 class="mt-4 font-display text-3xl">Atención</h2>
+        <h2 class="mt-3 font-display text-2xl sm:mt-4 sm:text-3xl">Atención</h2>
         <p class="mt-3 text-neutral-600">Consultas generales y comerciales.</p>
-        <a class="mt-3 block font-extrabold text-red-700" href="tel:+59521575776">
+        <a class="mt-3 flex min-h-11 items-center font-extrabold text-red-700" href="tel:+59521575776">
           (021) 575-776
         </a>
-        <a class="mt-1 block font-extrabold text-red-700" href="tel:+595974699585">
+        <a class="flex min-h-11 items-center font-extrabold text-red-700" href="tel:+595974699585">
           (0974) 699-585
         </a>
-        <a class="mt-1 block font-extrabold text-red-700" href="mailto:info@dulcesar.com.py">
+        <a class="flex min-h-11 items-center break-all font-extrabold text-red-700" href="mailto:info@dulcesar.com.py">
           info@dulcesar.com.py
         </a>
         <a
-          class="mt-1 block font-extrabold text-red-700"
+          class="flex min-h-11 items-center font-extrabold text-red-700"
           href="https://www.instagram.com/productos_dulcesar/"
           target="_blank"
           rel="noopener"
@@ -57,15 +62,15 @@ import PageHero from '../components/PageHero.astro';
   </section>
 
   <section class="section bg-white">
-    <div class="container-site grid gap-10 lg:grid-cols-[.9fr_1.1fr]">
+    <div class="container-site grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:gap-10">
       <div class="reveal">
-        <span class="font-extrabold uppercase tracking-[.18em] text-red-700">Escribinos</span>
+        <span class="kicker">Escribinos</span>
         <h2 class="section-title mt-3">¿En qué podemos ayudarte?</h2>
-        <p class="mt-5 text-lg text-neutral-600">
+        <p class="mt-4 text-neutral-600 sm:mt-5 sm:text-lg">
           Completá el formulario y se abrirá tu aplicación de correo con el mensaje listo para
           enviar. No almacenamos tus datos en este sitio.
         </p>
-        <div class="mt-8 rounded-2xl bg-red-50 p-6">
+        <div class="mt-6 rounded-2xl bg-red-50 p-5 sm:mt-8 sm:p-6">
           <h3 class="font-black text-red-900">Consultas comerciales</h3>
           <p class="mt-2 text-sm text-neutral-600">
             Si querés distribuir nuestros productos, también podés conocer nuestro programa para
@@ -77,7 +82,7 @@ import PageHero from '../components/PageHero.astro';
         </div>
       </div>
 
-      <form id="contact-form" class="card reveal grid gap-5 p-6 sm:p-8">
+      <form id="contact-form" class="card reveal grid gap-5 p-5 sm:p-8">
         <div class="grid gap-5 sm:grid-cols-2">
           <label class="grid gap-2 font-bold">
             Nombre
@@ -85,7 +90,7 @@ import PageHero from '../components/PageHero.astro';
               required
               name="nombre"
               autocomplete="name"
-              class="rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500"
+              class="min-h-12 rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500"
               placeholder="Tu nombre"
             />
           </label>
@@ -96,14 +101,14 @@ import PageHero from '../components/PageHero.astro';
               type="email"
               name="correo"
               autocomplete="email"
-              class="rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500"
+              class="min-h-12 rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500"
               placeholder="nombre@correo.com"
             />
           </label>
         </div>
         <label class="grid gap-2 font-bold">
           Motivo
-          <select name="motivo" class="rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500">
+          <select name="motivo" class="min-h-12 rounded-xl border border-neutral-200 px-4 py-3 font-normal focus:border-red-500">
             <option>Consulta sobre productos</option>
             <option>Consulta comercial</option>
             <option>Atención al cliente</option>
@@ -120,21 +125,40 @@ import PageHero from '../components/PageHero.astro';
             placeholder="Escribí tu consulta"
           ></textarea>
         </label>
-        <button class="btn btn-primary w-fit" type="submit">Preparar correo</button>
+        <button class="btn btn-primary w-full sm:w-fit" type="submit">Preparar correo</button>
       </form>
     </div>
   </section>
 
-  <section class="bg-red-800 py-8">
-    <div class="container-site">
+  <section class="section bg-red-800 text-white">
+    <div class="container-site grid gap-7 lg:grid-cols-[.85fr_1.15fr] lg:items-center lg:gap-10">
+      <div class="reveal">
+        <span class="eyebrow">San Lorenzo · Paraguay</span>
+        <h2 class="section-title mt-4">Encontranos cerca</h2>
+        <p class="mt-4 max-w-xl text-white/80 sm:text-lg">
+          Celsa Speratti y De la Honestidad 1372. Lunes a viernes, de 07:00 a 17:00.
+        </p>
+        <div class="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
+          <a class="btn btn-light col-span-2" href="tel:+59521575776">Llamar</a>
+          <a class="btn border border-white/35 bg-white/10 text-white hover:bg-white/20" href={mapsUrl} target="_blank" rel="noopener">
+            Cómo llegar
+          </a>
+          <a
+            class="btn border border-white/35 bg-white/10 text-white hover:bg-white/20"
+            href="https://www.instagram.com/productos_dulcesar/"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
+        </div>
+      </div>
       <iframe
         title="Ubicación de Dul-Cesar en Google Maps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.4247538301897!2d-57.525793925651655!3d-25.35707723000846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945dae851a06563d%3A0x46de4aeebb30b2ce!2sProductos%20Dul-Cesar!5e0!3m2!1ses!2spy!4v1750490688084!5m2!1ses!2spy"
-        width="100%"
-        height="460"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="rounded-[2rem] bg-white shadow-2xl"
+        class="h-64 w-full rounded-[1.5rem] bg-white shadow-2xl sm:h-[420px] sm:rounded-[2rem]"
       ></iframe>
     </div>
   </section>

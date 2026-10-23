@@ -64,17 +64,17 @@ const recipes = [
           alt="Torta de chocolate premium"
           width="900"
           height="900"
-          class="h-full min-h-[28rem] w-full object-cover"
+          class="aspect-[4/3] h-full w-full object-cover lg:aspect-auto lg:min-h-[28rem]"
         />
-        <div class="p-7 sm:p-10">
-          <span class="font-black uppercase tracking-[.18em] text-red-700">Receta destacada</span>
-          <h1 class="mt-3 font-display text-5xl">Torta de chocolate premium</h1>
+        <div class="p-5 sm:p-10">
+          <span class="kicker">Receta destacada</span>
+          <h2 class="mt-3 font-display text-3xl sm:text-5xl">Torta de chocolate premium</h2>
           <p class="mt-4 text-neutral-600">
             Una torta suave y chocolatosa preparada con Cacao y Azúcar Dul-Cesar. Rinde 8 porciones
             y está lista en aproximadamente 45 minutos.
           </p>
 
-          <h2 class="mt-8 text-xl font-black">Ingredientes</h2>
+          <h3 class="mt-7 text-lg font-black sm:mt-8 sm:text-xl">Ingredientes</h3>
           <ul class="mt-3 grid gap-2 text-neutral-700 sm:grid-cols-2">
             <li><strong class="text-red-700">200 g de Cacao Dul-Cesar</strong></li>
             <li><strong class="text-red-700">150 g de Azúcar Dul-Cesar</strong></li>
@@ -84,8 +84,8 @@ const recipes = [
             <li>120 ml de leche</li>
           </ul>
 
-          <h2 class="mt-8 text-xl font-black">Preparación</h2>
-          <ol class="mt-3 grid gap-3 text-neutral-700">
+          <h3 class="mt-7 text-lg font-black sm:mt-8 sm:text-xl">Preparación</h3>
+          <ol class="mt-3 grid gap-3 text-sm text-neutral-700 sm:text-base">
             <li><strong class="text-red-700">1.</strong> Precalentá el horno a 180 °C y engrasá un molde redondo.</li>
             <li><strong class="text-red-700">2.</strong> Mezclá el cacao Dul-Cesar con la harina y el azúcar.</li>
             <li><strong class="text-red-700">3.</strong> Incorporá los huevos batidos y la mantequilla derretida.</li>
@@ -99,11 +99,11 @@ const recipes = [
 
   <section class="section bg-white">
     <div class="container-site">
-      <div class="mx-auto mb-12 max-w-3xl text-center reveal">
-        <span class="font-extrabold uppercase tracking-[.18em] text-red-700">Más ideas</span>
+      <div class="mx-auto mb-8 max-w-3xl text-center reveal sm:mb-12">
+        <span class="kicker">Más ideas</span>
         <h2 class="section-title mt-3">Recetas para guardar</h2>
       </div>
-      <div class="grid gap-7 lg:grid-cols-2">
+      <div class="grid gap-5 lg:grid-cols-2 lg:gap-7">
         {
           recipes.map((recipe) => (
             <article id={recipe.id} class="card reveal overflow-hidden">
@@ -113,11 +113,11 @@ const recipes = [
                 width="700"
                 height="500"
                 loading="lazy"
-                class="h-60 w-full object-cover"
+                class="aspect-[4/3] w-full object-cover"
               />
-              <div class="p-6">
-                <div class="flex items-center justify-between gap-3">
-                  <h3 class="font-display text-3xl">{recipe.title}</h3>
+              <div class="p-5 sm:p-6">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                  <h3 class="font-display text-2xl sm:text-3xl">{recipe.title}</h3>
                   <span class="whitespace-nowrap rounded-full bg-red-50 px-3 py-1 text-xs font-black text-red-700">
                     {recipe.time}
                   </span>
@@ -127,8 +127,8 @@ const recipes = [
                   Producto destacado: {recipe.product}
                 </p>
 
-                <details class="group mt-6 border-t border-red-100 pt-5">
-                  <summary class="flex cursor-pointer list-none items-center justify-between font-black text-red-700">
+                <details class="group mt-5 border-t border-red-100 pt-5 sm:mt-6">
+                  <summary class="flex min-h-11 cursor-pointer list-none items-center justify-between font-black text-red-700">
                     Ver receta completa
                     <span class="text-xl transition group-open:rotate-45" aria-hidden="true">+</span>
                   </summary>
@@ -158,20 +158,20 @@ const recipes = [
   </section>
 
   <section class="section bg-red-50">
-    <div class="container-site grid gap-6 md:grid-cols-3">
-      <article class="card reveal p-7">
+    <div class="container-site grid gap-4 sm:gap-6 md:grid-cols-3">
+      <article class="card reveal p-5 sm:p-7">
         <span class="text-3xl">♨</span>
-        <h2 class="mt-4 text-xl font-black">Temperatura correcta</h2>
+        <h2 class="mt-4 text-lg font-black sm:text-xl">Temperatura correcta</h2>
         <p class="mt-2 text-neutral-600">Precalentá siempre el horno para lograr una cocción pareja.</p>
       </article>
-      <article class="card reveal p-7">
+      <article class="card reveal p-5 sm:p-7">
         <span class="text-3xl">⚖</span>
-        <h2 class="mt-4 text-xl font-black">Medidas precisas</h2>
+        <h2 class="mt-4 text-lg font-black sm:text-xl">Medidas precisas</h2>
         <p class="mt-2 text-neutral-600">Pesá los ingredientes secos para obtener resultados consistentes.</p>
       </article>
-      <article class="card reveal p-7">
+      <article class="card reveal p-5 sm:p-7">
         <span class="text-3xl">♡</span>
-        <h2 class="mt-4 text-xl font-black">Tiempo de reposo</h2>
+        <h2 class="mt-4 text-lg font-black sm:text-xl">Tiempo de reposo</h2>
         <p class="mt-2 text-neutral-600">Dejá enfriar antes de cortar para conservar la textura.</p>
       </article>
     </div>

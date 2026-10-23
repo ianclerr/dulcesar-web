@@ -9,14 +9,18 @@ interface Props {
 const { eyebrow = 'Dul-Cesar', title, description, image } = Astro.props;
 ---
 
-<section class="relative isolate min-h-[28rem] overflow-hidden text-white">
-  <img src={image} alt="" class="absolute inset-0 -z-20 h-full w-full object-cover" />
-  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-[#641316]/95 via-red-800/80 to-orange-700/35"></div>
-  <div class="container-site flex min-h-[28rem] items-center py-16">
+<section class="relative isolate overflow-hidden bg-red-800 text-white">
+  <img src={image} alt="" class="absolute inset-0 -z-20 h-full w-full object-cover object-center" />
+  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-[#560d12]/95 via-red-800/82 to-[#7a1218]/90 lg:bg-gradient-to-r lg:from-[#560d12]/95 lg:via-red-800/78 lg:to-orange-600/30"></div>
+  <div class="container-site flex items-end py-10 sm:py-14 lg:min-h-[22rem] lg:py-20">
     <div class="max-w-3xl reveal">
       <span class="eyebrow">{eyebrow}</span>
-      <h1 class="mt-5 font-display text-5xl leading-tight sm:text-6xl lg:text-7xl">{title}</h1>
-      <p class="mt-5 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">{description}</p>
+      <h1 class="mt-4 max-w-[16ch] font-display text-[2.35rem] leading-[0.98] sm:text-6xl lg:text-7xl lg:leading-[.95]">
+        {title}
+      </h1>
+      <p class="mt-4 max-w-2xl text-[0.98rem] leading-relaxed text-white/85 sm:mt-5 sm:text-xl">
+        {description}
+      </p>
     </div>
   </div>
 </section>
