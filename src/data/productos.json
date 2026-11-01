@@ -1,5 +1,719 @@
 [
   {
+    "id": "mermeladas-mermelada-de-ciruela-light-economica-230-g",
+    "nombre": "Mermelada De Ciruela Light Economica 230 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-light-economica-400-g",
+    "nombre": "Mermelada De Ciruela Light Economica 400 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-light-en-frasco-380-g",
+    "nombre": "Mermelada De Ciruela Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-light-sachet-250-g",
+    "nombre": "Mermelada De Ciruela Light Sachet 250 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-tradicional-economica-240-g",
+    "nombre": "Mermelada De Ciruela Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-tradicional-economica-450-g",
+    "nombre": "Mermelada De Ciruela Tradicional Economica 450 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-tradicional-economica-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-ciruela-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Ciruela Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-economica-230-g",
+    "nombre": "Mermelada De Frutilla Light Economica 230 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-economica-400-g",
+    "nombre": "Mermelada De Frutilla Light Economica 400 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-en-frasco-380-g",
+    "nombre": "Mermelada De Frutilla Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-light-sachet-250-g",
+    "nombre": "Mermelada De Frutilla Light Sachet 250 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-tradicional-economica-240-g",
+    "nombre": "Mermelada De Frutilla Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-tradicional-economica-450-g",
+    "nombre": "Mermelada De Frutilla Tradicional Economica 450 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-tradicional-economica-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-frutilla-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Frutilla Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-economica-230-g",
+    "nombre": "Mermelada De Guayaba Light Economica 230 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-economica-400-g",
+    "nombre": "Mermelada De Guayaba Light Economica 400 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-en-frasco-380-g",
+    "nombre": "Mermelada De Guayaba Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-light-sachet-250-g",
+    "nombre": "Mermelada De Guayaba Light Sachet 250 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-1-kg",
+    "nombre": "Mermelada De Guayaba Tradicional 1 kg",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-1-kg.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-250-g",
+    "nombre": "Mermelada De Guayaba Tradicional 250 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-250-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-500-g",
+    "nombre": "Mermelada De Guayaba Tradicional 500 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-500-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-750-g",
+    "nombre": "Mermelada De Guayaba Tradicional 750 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-750-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-economica-240-g",
+    "nombre": "Mermelada De Guayaba Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-tradicional-economica-450-g",
+    "nombre": "Mermelada De Guayaba Tradicional Economica 450 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-economica-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-guayaba-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Guayaba Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-light-economica-230-g",
+    "nombre": "Mermelada De Naranja Light Economica 230 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-economica-230-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-light-economica-400-g",
+    "nombre": "Mermelada De Naranja Light Economica 400 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-economica-400-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-light-en-frasco-380-g",
+    "nombre": "Mermelada De Naranja Light En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-tradicional-450-g",
+    "nombre": "Mermelada De Naranja Tradicional 450 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-tradicional-450-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-tradicional-economica-240-g",
+    "nombre": "Mermelada De Naranja Tradicional Economica 240 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-tradicional-economica-240-g.webp"
+  },
+  {
+    "id": "mermeladas-mermelada-de-naranja-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Naranja Zero En Frasco 380 g",
+    "categoria": "mermeladas",
+    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-de-naranja-light-eco-230-g",
+    "nombre": "Mermelada De Naranja Light Eco 230 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-de-naranja-light-eco-230-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-ciruela-en-frasco-380-g",
+    "nombre": "Mermelada Light De Ciruela En Frasco 380 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-ciruela-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-ciruela-en-pote-230-g",
+    "nombre": "Mermelada Light De Ciruela En Pote 230 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-ciruela-en-pote-230-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-ciruela-en-pote-eco-230-g",
+    "nombre": "Mermelada Light De Ciruela En Pote Eco 230 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-ciruela-en-pote-eco-230-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-ciruela-en-pote-eco-400-g",
+    "nombre": "Mermelada Light De Ciruela En Pote Eco 400 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-ciruela-en-pote-eco-400-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-ciruela-sachet-250-g",
+    "nombre": "Mermelada Light De Ciruela Sachet 250 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-ciruela-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-frutilla-en-frasco-380-g",
+    "nombre": "Mermelada Light De Frutilla En Frasco 380 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-frutilla-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-frutilla-en-pote-eco-230-g",
+    "nombre": "Mermelada Light De Frutilla En Pote Eco 230 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-frutilla-en-pote-eco-230-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-frutilla-en-pote-eco-400-g",
+    "nombre": "Mermelada Light De Frutilla En Pote Eco 400 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-frutilla-en-pote-eco-400-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-frutilla-sachet-250-g",
+    "nombre": "Mermelada Light De Frutilla Sachet 250 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-frutilla-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-guayaba-en-frasco-380-g",
+    "nombre": "Mermelada Light De Guayaba En Frasco 380 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-guayaba-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-guayaba-en-pote-eco-230-g",
+    "nombre": "Mermelada Light De Guayaba En Pote Eco 230 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-guayaba-en-pote-eco-230-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-guayaba-en-pote-eco-400-g",
+    "nombre": "Mermelada Light De Guayaba En Pote Eco 400 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-guayaba-en-pote-eco-400-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-guayaba-sachet-250-g",
+    "nombre": "Mermelada Light De Guayaba Sachet 250 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-guayaba-sachet-250-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-naranja-en-frasco-380-g",
+    "nombre": "Mermelada Light De Naranja En Frasco 380 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-naranja-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-light-mermelada-light-de-naranja-en-pote-eco-400-g",
+    "nombre": "Mermelada Light De Naranja En Pote Eco 400 g",
+    "categoria": "mermeladas-light",
+    "imagen": "/images/imagenes/mermeladas-light/mermelada-light-de-naranja-en-pote-eco-400-g.webp"
+  },
+  {
+    "id": "mermeladas-zero-dulce-batata-premium-zero-230-g",
+    "nombre": "Dulce Batata Premium Zero 230 g",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/dulce-batata-premium-zero-230-g.webp"
+  },
+  {
+    "id": "mermeladas-zero-dulce-de-batata-paquetito-12",
+    "nombre": "Dulce De Batata Paquetito 12",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/dulce-de-batata-paquetito-12.webp"
+  },
+  {
+    "id": "mermeladas-zero-dulce-de-batata-zero-en-barra-180-g",
+    "nombre": "Dulce De Batata Zero En Barra 180 g",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/dulce-de-batata-zero-en-barra-180-g.webp"
+  },
+  {
+    "id": "mermeladas-zero-dulce-de-batata-zero-en-barra-350-g",
+    "nombre": "Dulce De Batata Zero En Barra 350 g",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/dulce-de-batata-zero-en-barra-350-g.webp"
+  },
+  {
+    "id": "mermeladas-zero-mermelada-de-ciruela-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Ciruela Zero En Frasco 380 g",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/mermelada-de-ciruela-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-zero-mermelada-de-frutilla-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Frutilla Zero En Frasco 380 g",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/mermelada-de-frutilla-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-zero-mermelada-de-guayaba-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Guayaba Zero En Frasco 380 g",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/mermelada-de-guayaba-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "mermeladas-zero-mermelada-de-naranja-zero-en-frasco-380-g",
+    "nombre": "Mermelada De Naranja Zero En Frasco 380 g",
+    "categoria": "mermeladas-zero",
+    "imagen": "/images/imagenes/mermeladas-zero/mermelada-de-naranja-zero-en-frasco-380-g.webp"
+  },
+  {
+    "id": "tradicional-batata-200-g",
+    "nombre": "Batata 200 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-200-g.webp"
+  },
+  {
+    "id": "tradicional-batata-400-g",
+    "nombre": "Batata 400 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-400-g.webp"
+  },
+  {
+    "id": "tradicional-batata-600-g",
+    "nombre": "Batata 600 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-600-g.webp"
+  },
+  {
+    "id": "tradicional-batata-chocolate-tradicional-200-g",
+    "nombre": "Batata Chocolate Tradicional 200 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-chocolate-tradicional-200-g.webp"
+  },
+  {
+    "id": "tradicional-batata-chocolate-tradicional-400-g",
+    "nombre": "Batata Chocolate Tradicional 400 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-chocolate-tradicional-400-g.webp"
+  },
+  {
+    "id": "tradicional-batata-chocolate-tradicional-70-g",
+    "nombre": "Batata Chocolate Tradicional 70 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-chocolate-tradicional-70-g.webp"
+  },
+  {
+    "id": "tradicional-batata-circular-en-pote-500-g",
+    "nombre": "Batata Circular En Pote 500 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-circular-en-pote-500-g.webp"
+  },
+  {
+    "id": "tradicional-batata-con-chocolate-paquetito-12",
+    "nombre": "Batata Con Chocolate Paquetito 12",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-con-chocolate-paquetito-12.webp"
+  },
+  {
+    "id": "tradicional-batata-de-guayaba-paquetito-12",
+    "nombre": "Batata De Guayaba Paquetito 12",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-de-guayaba-paquetito-12.webp"
+  },
+  {
+    "id": "tradicional-batata-premium-con-chocolate-250-g",
+    "nombre": "Batata Premium Con Chocolate 250 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-premium-con-chocolate-250-g.webp"
+  },
+  {
+    "id": "tradicional-batata-premium-en-pote-500-g",
+    "nombre": "Batata Premium En Pote 500 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-premium-en-pote-500-g.webp"
+  },
+  {
+    "id": "tradicional-batata-premium-pote-250-g",
+    "nombre": "Batata Premium Pote 250 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-premium-pote-250-g.webp"
+  },
+  {
+    "id": "tradicional-batata-tradicional-paquetito-12",
+    "nombre": "Batata Tradicional Paquetito 12",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/batata-tradicional-paquetito-12.webp"
+  },
+  {
+    "id": "tradicional-chipa-piru-200-g",
+    "nombre": "Chipa Piru 200 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/chipa-piru-200-g.webp"
+  },
+  {
+    "id": "tradicional-chipa-piru-80-g",
+    "nombre": "Chipa Piru 80 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/chipa-piru-80-g.webp"
+  },
+  {
+    "id": "tradicional-cocido-quemado-tradicional-en-bolsa-150-g",
+    "nombre": "Cocido Quemado Tradicional En Bolsa 150 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/cocido-quemado-tradicional-en-bolsa-150-g.webp"
+  },
+  {
+    "id": "tradicional-cocido-quemado-tradicional-en-bolsa-25-g",
+    "nombre": "Cocido Quemado Tradicional En Bolsa 25 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/cocido-quemado-tradicional-en-bolsa-25-g.webp"
+  },
+  {
+    "id": "tradicional-cocido-quemado-tradicional-en-pote-150-g",
+    "nombre": "Cocido Quemado Tradicional En Pote 150 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/cocido-quemado-tradicional-en-pote-150-g.webp"
+  },
+  {
+    "id": "tradicional-dulce-de-guayaba-en-pan-200-g",
+    "nombre": "Dulce De Guayaba En Pan 200 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/dulce-de-guayaba-en-pan-200-g.webp"
+  },
+  {
+    "id": "tradicional-dulce-de-guayaba-en-pan-400-g",
+    "nombre": "Dulce De Guayaba En Pan 400 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/dulce-de-guayaba-en-pan-400-g.webp"
+  },
+  {
+    "id": "tradicional-dulce-de-leche-200-g",
+    "nombre": "Dulce De Leche 200 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/dulce-de-leche-200-g.webp"
+  },
+  {
+    "id": "tradicional-dulce-de-leche-400-g",
+    "nombre": "Dulce De Leche 400 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/dulce-de-leche-400-g.webp"
+  },
+  {
+    "id": "tradicional-dulce-de-mamon-1-kg",
+    "nombre": "Dulce De Mamon 1 kg",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/dulce-de-mamon-1-kg.webp"
+  },
+  {
+    "id": "tradicional-dulce-de-mamon-400-g",
+    "nombre": "Dulce De Mamon 400 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/dulce-de-mamon-400-g.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-500-ml",
+    "nombre": "Edulcorante 500 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-500-ml.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-mix-100-ml-2",
+    "nombre": "Edulcorante Mix 100 ml (2)",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-mix-100-ml-2.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-mix-250-ml",
+    "nombre": "Edulcorante Mix 250 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-mix-250-ml.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-mix-30-ml",
+    "nombre": "Edulcorante Mix 30 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-mix-30-ml.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-solo-stevia-100-ml",
+    "nombre": "Edulcorante Solo Stevia 100 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-solo-stevia-100-ml.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-solo-stevia-250-ml",
+    "nombre": "Edulcorante Solo Stevia 250 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-solo-stevia-250-ml.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-solo-stevia-500-ml",
+    "nombre": "Edulcorante Solo Stevia 500 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-solo-stevia-500-ml.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-solo-sucralosa-100-ml",
+    "nombre": "Edulcorante Solo Sucralosa 100 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-solo-sucralosa-100-ml.webp"
+  },
+  {
+    "id": "tradicional-edulcorante-solo-sucralosa-250-ml",
+    "nombre": "Edulcorante Solo Sucralosa 250 ml",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/edulcorante-solo-sucralosa-250-ml.webp"
+  },
+  {
+    "id": "tradicional-guayaba-circular-en-pote-500-g",
+    "nombre": "Guayaba Circular En Pote 500 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/guayaba-circular-en-pote-500-g.webp"
+  },
+  {
+    "id": "tradicional-mani-en-barra-200-g",
+    "nombre": "Mani En Barra 200 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mani-en-barra-200-g.webp"
+  },
+  {
+    "id": "tradicional-mani-en-barra-320-g",
+    "nombre": "Mani En Barra 320 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mani-en-barra-320-g.webp"
+  },
+  {
+    "id": "tradicional-mani-en-barra-380-g",
+    "nombre": "Mani En Barra 380 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mani-en-barra-380-g.webp"
+  },
+  {
+    "id": "tradicional-mani-en-barra-paquetito-12",
+    "nombre": "Mani En Barra Paquetito 12",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mani-en-barra-paquetito-12.webp"
+  },
+  {
+    "id": "tradicional-mani-molido-1-kg",
+    "nombre": "Mani Molido 1 kg",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mani-molido-1-kg.webp"
+  },
+  {
+    "id": "tradicional-mani-molido-250-g-2",
+    "nombre": "Mani Molido 250 g (2)",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mani-molido-250-g-2.webp"
+  },
+  {
+    "id": "tradicional-mani-molido-500-g-2",
+    "nombre": "Mani Molido 500 g (2)",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mani-molido-500-g-2.webp"
+  },
+  {
+    "id": "tradicional-mermelada-de-guayaba-tradicional-1-kg",
+    "nombre": "Mermelada De Guayaba Tradicional 1 kg",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mermelada-de-guayaba-tradicional-1-kg.webp"
+  },
+  {
+    "id": "tradicional-mermelada-de-guayaba-tradicional-250-g",
+    "nombre": "Mermelada De Guayaba Tradicional 250 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mermelada-de-guayaba-tradicional-250-g.webp"
+  },
+  {
+    "id": "tradicional-mermelada-de-guayaba-tradicional-750-g",
+    "nombre": "Mermelada De Guayaba Tradicional 750 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mermelada-de-guayaba-tradicional-750-g.webp"
+  },
+  {
+    "id": "tradicional-mermelada-de-guayaba-tradicional-de-500-g",
+    "nombre": "Mermelada De Guayaba Tradicional De 500 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mermelada-de-guayaba-tradicional-de-500-g.webp"
+  },
+  {
+    "id": "tradicional-mermelada-de-guayaba-tradicional-repostera-de-5-kg",
+    "nombre": "Mermelada De Guayaba Tradicional Repostera De 5 kg",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/mermelada-de-guayaba-tradicional-repostera-de-5-kg.webp"
+  },
+  {
+    "id": "tradicional-paquete-mani-12-unidades-45-g",
+    "nombre": "Paquete Mani 12 Unidades 45 g",
+    "categoria": "tradicional",
+    "imagen": "/images/imagenes/tradicional/paquete-mani-12-unidades-45-g.webp"
+  },
+  {
+    "id": "aderezos-aderezo-de-limon-1-l",
+    "nombre": "Aderezo De Limon 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/aderezo-de-limon-1-l.webp"
+  },
+  {
+    "id": "aderezos-aderezo-de-limon-250-ml",
+    "nombre": "Aderezo De Limón 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/aderezo-de-limon-250-ml.webp"
+  },
+  {
+    "id": "aderezos-aderezo-de-limon-5-l",
+    "nombre": "Aderezo De Limon 5 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/aderezo-de-limon-5-l.webp"
+  },
+  {
+    "id": "aderezos-aderezo-de-limon-500-ml",
+    "nombre": "Aderezo De Limón 500 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/aderezo-de-limon-500-ml.webp"
+  },
+  {
+    "id": "aderezos-chimichurri-1-l",
+    "nombre": "Chimichurri 1 L",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/chimichurri-1-l.webp"
+  },
+  {
+    "id": "aderezos-chimichurri-150-ml",
+    "nombre": "Chimichurri 150 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/chimichurri-150-ml.webp"
+  },
+  {
+    "id": "aderezos-chimichurri-250-ml",
+    "nombre": "Chimichurri 250 ml",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/chimichurri-250-ml.webp"
+  },
+  {
+    "id": "aderezos-oregano-15-g",
+    "nombre": "Oregano 15 g",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/oregano-15-g.webp"
+  },
+  {
+    "id": "aderezos-oregano-3-kg",
+    "nombre": "Oregano 3 kg",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/oregano-3-kg.webp"
+  },
+  {
+    "id": "aderezos-pimienta-15-g",
+    "nombre": "Pimienta 15 g",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/pimienta-15-g.webp"
+  },
+  {
+    "id": "aderezos-sal-condimentada-200-g",
+    "nombre": "Sal Condimentada 200 g",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/sal-condimentada-200-g.webp"
+  },
+  {
+    "id": "aderezos-sal-condimentada-3-kg",
+    "nombre": "Sal Condimentada 3 kg",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/sal-condimentada-3-kg.webp"
+  },
+  {
+    "id": "aderezos-sal-condimentada-5-kg",
+    "nombre": "Sal Condimentada 5 kg",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/sal-condimentada-5-kg.webp"
+  },
+  {
+    "id": "aderezos-sal-fina-250-g",
+    "nombre": "Sal Fina 250 g",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/sal-fina-250-g.webp"
+  },
+  {
+    "id": "aderezos-sal-fina-5-kg",
+    "nombre": "Sal Fina 5 kg",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/sal-fina-5-kg.webp"
+  },
+  {
+    "id": "aderezos-sal-fina-500-g",
+    "nombre": "Sal Fina 500 g",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/sal-fina-500-g.webp"
+  },
+  {
+    "id": "aderezos-sal-parrillera-250-g",
+    "nombre": "Sal Parrillera 250 g",
+    "categoria": "aderezos",
+    "imagen": "/images/imagenes/aderezos/sal-parrillera-250-g.webp"
+  },
+  {
     "id": "aderezos-salsa-de-ajo-1-l",
     "nombre": "Salsa De Ajo 1 L",
     "categoria": "aderezos",
@@ -168,42 +882,6 @@
     "imagen": "/images/imagenes/aderezos/vinagre-de-vino-tinto-500-ml.webp"
   },
   {
-    "id": "granos-galleta-molida-200-g",
-    "nombre": "Galleta Molida 200 g",
-    "categoria": "granos",
-    "imagen": "/images/imagenes/granos/galleta-molida-200-g.webp"
-  },
-  {
-    "id": "granos-galleta-molida-400-g",
-    "nombre": "Galleta Molida 400 g",
-    "categoria": "granos",
-    "imagen": "/images/imagenes/granos/galleta-molida-400-g.webp"
-  },
-  {
-    "id": "granos-maiz-pororo-200-g",
-    "nombre": "Maiz Pororo 200 g",
-    "categoria": "granos",
-    "imagen": "/images/imagenes/granos/maiz-pororo-200-g.webp"
-  },
-  {
-    "id": "granos-maiz-pororo-400-g",
-    "nombre": "Maiz Pororo 400 g",
-    "categoria": "granos",
-    "imagen": "/images/imagenes/granos/maiz-pororo-400-g.webp"
-  },
-  {
-    "id": "granos-poroto-200-g",
-    "nombre": "Poroto 200 g",
-    "categoria": "granos",
-    "imagen": "/images/imagenes/granos/poroto-200-g.webp"
-  },
-  {
-    "id": "granos-poroto-400-g",
-    "nombre": "Poroto 400 g",
-    "categoria": "granos",
-    "imagen": "/images/imagenes/granos/poroto-400-g.webp"
-  },
-  {
     "id": "jugos-jugo-concentrado-de-frutilla-900-ml",
     "nombre": "Jugo Concentrado De Frutilla 900 ml",
     "categoria": "jugos",
@@ -264,220 +942,423 @@
     "imagen": "/images/imagenes/jugos/jugo-twist-nectar-480-ml.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-ciruela-light-economica-230-g",
-    "nombre": "Mermelada De Ciruela Light Economica 230 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-economica-230-g.webp"
+    "id": "granos-galleta-molida-200-g",
+    "nombre": "Galleta Molida 200 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/galleta-molida-200-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-ciruela-light-economica-400-g",
-    "nombre": "Mermelada De Ciruela Light Economica 400 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-economica-400-g.webp"
+    "id": "granos-galleta-molida-400-g",
+    "nombre": "Galleta Molida 400 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/galleta-molida-400-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-ciruela-light-en-frasco-380-g",
-    "nombre": "Mermelada De Ciruela Light En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-en-frasco-380-g.webp"
+    "id": "granos-maiz-pororo-200-g",
+    "nombre": "Maiz Pororo 200 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/maiz-pororo-200-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-ciruela-light-sachet-250-g",
-    "nombre": "Mermelada De Ciruela Light Sachet 250 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-light-sachet-250-g.webp"
+    "id": "granos-maiz-pororo-400-g",
+    "nombre": "Maiz Pororo 400 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/maiz-pororo-400-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-ciruela-tradicional-economica-240-g",
-    "nombre": "Mermelada De Ciruela Tradicional Economica 240 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-tradicional-economica-240-g.webp"
+    "id": "granos-poroto-200-g",
+    "nombre": "Poroto 200 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/poroto-200-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-ciruela-tradicional-economica-450-g",
-    "nombre": "Mermelada De Ciruela Tradicional Economica 450 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-tradicional-economica-450-g.webp"
+    "id": "granos-poroto-400-g",
+    "nombre": "Poroto 400 g",
+    "categoria": "granos",
+    "imagen": "/images/imagenes/granos/poroto-400-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-ciruela-zero-en-frasco-380-g",
-    "nombre": "Mermelada De Ciruela Zero En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "zero",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-ciruela-zero-en-frasco-380-g.webp"
+    "id": "reposteria-almidon-de-maiz-5-kg",
+    "nombre": "Almidon De Maiz 5 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/almidon-de-maiz-5-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-frutilla-light-economica-230-g",
-    "nombre": "Mermelada De Frutilla Light Economica 230 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-economica-230-g.webp"
+    "id": "reposteria-almidon-de-maiz-500-g",
+    "nombre": "Almidon De Maiz 500 g",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/almidon-de-maiz-500-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-frutilla-light-economica-400-g",
-    "nombre": "Mermelada De Frutilla Light Economica 400 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-economica-400-g.webp"
+    "id": "reposteria-azucar-impalpable-1-kg",
+    "nombre": "Azucar Impalpable 1 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/azucar-impalpable-1-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-frutilla-light-en-frasco-380-g",
-    "nombre": "Mermelada De Frutilla Light En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-en-frasco-380-g.webp"
+    "id": "reposteria-azucar-impalpable-500-g",
+    "nombre": "Azucar Impalpable 500 g",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/azucar-impalpable-500-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-frutilla-light-sachet-250-g",
-    "nombre": "Mermelada De Frutilla Light Sachet 250 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-light-sachet-250-g.webp"
+    "id": "reposteria-colorante-amarillo-110-ml",
+    "nombre": "Colorante Amarillo 110 ml",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/colorante-amarillo-110-ml.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-frutilla-tradicional-economica-240-g",
-    "nombre": "Mermelada De Frutilla Tradicional Economica 240 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-tradicional-economica-240-g.webp"
+    "id": "reposteria-colorante-rojo-110-ml",
+    "nombre": "Colorante Rojo 110 ml",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/colorante-rojo-110-ml.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-frutilla-tradicional-economica-450-g",
-    "nombre": "Mermelada De Frutilla Tradicional Economica 450 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-tradicional-economica-450-g.webp"
+    "id": "reposteria-colorante-verde-110-ml",
+    "nombre": "Colorante Verde 110 ml",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/colorante-verde-110-ml.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-frutilla-zero-en-frasco-380-g",
-    "nombre": "Mermelada De Frutilla Zero En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "zero",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-frutilla-zero-en-frasco-380-g.webp"
+    "id": "reposteria-crema-chantilly-200-g",
+    "nombre": "Crema Chantilly 200 g",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/crema-chantilly-200-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-light-economica-230-g",
-    "nombre": "Mermelada De Guayaba Light Economica 230 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-economica-230-g.webp"
+    "id": "reposteria-dulce-de-batata-con-chocolate-5kg",
+    "nombre": "Dulce De Batata Con Chocolate 5kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/dulce-de-batata-con-chocolate-5kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-light-economica-400-g",
-    "nombre": "Mermelada De Guayaba Light Economica 400 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-economica-400-g.webp"
+    "id": "reposteria-dulce-de-batata-en-pan-5-kg",
+    "nombre": "Dulce De Batata En Pan 5 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/dulce-de-batata-en-pan-5-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-light-en-frasco-380-g",
-    "nombre": "Mermelada De Guayaba Light En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-en-frasco-380-g.webp"
+    "id": "reposteria-dulce-de-guayaba-en-pan-5kg",
+    "nombre": "Dulce De Guayaba En Pan 5kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/dulce-de-guayaba-en-pan-5kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-light-sachet-250-g",
-    "nombre": "Mermelada De Guayaba Light Sachet 250 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-light-sachet-250-g.webp"
+    "id": "reposteria-frutas-abrillanatadas-1-kg",
+    "nombre": "Frutas Abrillanatadas 1 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/frutas-abrillanatadas-1-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-tradicional-1-kg",
-    "nombre": "Mermelada De Guayaba Tradicional 1 kg",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-1-kg.webp"
+    "id": "reposteria-frutas-abrillantada-10-kg",
+    "nombre": "Frutas Abrillantada 10 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/frutas-abrillantada-10-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-tradicional-250-g",
-    "nombre": "Mermelada De Guayaba Tradicional 250 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-250-g.webp"
+    "id": "reposteria-jalea-de-brillo-1-kg",
+    "nombre": "Jalea De Brillo 1 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/jalea-de-brillo-1-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-tradicional-500-g",
-    "nombre": "Mermelada De Guayaba Tradicional 500 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-500-g.webp"
+    "id": "reposteria-jalea-de-brillo-5-kg",
+    "nombre": "Jalea De Brillo 5 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/jalea-de-brillo-5-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-tradicional-750-g",
-    "nombre": "Mermelada De Guayaba Tradicional 750 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-750-g.webp"
+    "id": "reposteria-jalea-de-brillo-500-g",
+    "nombre": "Jalea De Brillo 500 g",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/jalea-de-brillo-500-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-tradicional-economica-240-g",
-    "nombre": "Mermelada De Guayaba Tradicional Economica 240 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-economica-240-g.webp"
+    "id": "reposteria-mani-molido-5-kg-2",
+    "nombre": "Mani Molido 5 kg (2)",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/mani-molido-5-kg-2.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-tradicional-economica-450-g",
-    "nombre": "Mermelada De Guayaba Tradicional Economica 450 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-economica-450-g.webp"
+    "id": "reposteria-manteca-de-mani-natural-4-5-kg",
+    "nombre": "Manteca De Maní Natural 4,5 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/manteca-de-mani-natural-4-5-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-guayaba-zero-en-frasco-380-g",
-    "nombre": "Mermelada De Guayaba Zero En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "zero",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-guayaba-zero-en-frasco-380-g.webp"
+    "id": "reposteria-mermelada-de-guayaba-de-28-kg",
+    "nombre": "Mermelada De Guayaba De 28 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/mermelada-de-guayaba-de-28-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-naranja-light-economica-230-g",
-    "nombre": "Mermelada De Naranja Light Economica 230 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-economica-230-g.webp"
+    "id": "reposteria-mermelada-de-guayaba-de-5-kg",
+    "nombre": "Mermelada De Guayaba De 5 kg",
+    "categoria": "reposteria",
+    "imagen": "/images/imagenes/reposteria/mermelada-de-guayaba-de-5-kg.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-naranja-light-economica-400-g",
-    "nombre": "Mermelada De Naranja Light Economica 400 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-economica-400-g.webp"
+    "id": "saludables-granola-premium-x-300-g",
+    "nombre": "Granola Premium X 300 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/granola-premium-x-300-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-naranja-light-en-frasco-380-g",
-    "nombre": "Mermelada De Naranja Light En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "light",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-light-en-frasco-380-g.webp"
+    "id": "saludables-granola-sweet-x-200-g",
+    "nombre": "Granola Sweet X 200 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/granola-sweet-x-200-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-naranja-tradicional-450-g",
-    "nombre": "Mermelada De Naranja Tradicional 450 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-tradicional-450-g.webp"
+    "id": "saludables-mani-con-en-pote-250-g",
+    "nombre": "Mani Con En Pote 250 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-con-en-pote-250-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-naranja-tradicional-economica-240-g",
-    "nombre": "Mermelada De Naranja Tradicional Economica 240 g",
-    "categoria": "mermeladas",
-    "linea": "tradicional",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-tradicional-economica-240-g.webp"
+    "id": "saludables-mani-con-en-pote-500-g",
+    "nombre": "Mani Con En Pote 500 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-con-en-pote-500-g.webp"
   },
   {
-    "id": "mermeladas-mermelada-de-naranja-zero-en-frasco-380-g",
-    "nombre": "Mermelada De Naranja Zero En Frasco 380 g",
-    "categoria": "mermeladas",
-    "linea": "zero",
-    "imagen": "/images/imagenes/mermeladas/mermelada-de-naranja-zero-en-frasco-380-g.webp"
+    "id": "saludables-mani-mash-en-pote-250-g",
+    "nombre": "Mani Mash En Pote 250 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-mash-en-pote-250-g.webp"
+  },
+  {
+    "id": "saludables-mani-mash-en-pote-500-g",
+    "nombre": "Mani Mash En Pote 500 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-mash-en-pote-500-g.webp"
+  },
+  {
+    "id": "saludables-mani-milk-en-pote-250-g",
+    "nombre": "Mani Milk En Pote 250 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-milk-en-pote-250-g.webp"
+  },
+  {
+    "id": "saludables-mani-milk-en-pote-500-g",
+    "nombre": "Mani Milk En Pote 500 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-milk-en-pote-500-g.webp"
+  },
+  {
+    "id": "saludables-mani-molido-en-pote-250-g",
+    "nombre": "Mani Molido En Pote 250 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-molido-en-pote-250-g.webp"
+  },
+  {
+    "id": "saludables-mani-molido-en-pote-500-g",
+    "nombre": "Mani Molido En Pote 500 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-molido-en-pote-500-g.webp"
+  },
+  {
+    "id": "saludables-mani-pro-en-pote-250-g",
+    "nombre": "Mani Pro En Pote 250 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-pro-en-pote-250-g.webp"
+  },
+  {
+    "id": "saludables-mani-pro-en-pote-500-g",
+    "nombre": "Mani Pro En Pote 500 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-pro-en-pote-500-g.webp"
+  },
+  {
+    "id": "saludables-mani-seis-en-pote-250-g",
+    "nombre": "Mani Seis En Pote 250 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-seis-en-pote-250-g.webp"
+  },
+  {
+    "id": "saludables-mani-seis-en-pote-d500-g",
+    "nombre": "Mani Seis En Pote D500 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-seis-en-pote-d500-g.webp"
+  },
+  {
+    "id": "saludables-mani-tostado-en-pote-250-g",
+    "nombre": "Mani Tostado En Pote 250 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-tostado-en-pote-250-g.webp"
+  },
+  {
+    "id": "saludables-mani-tostado-en-pote-500-g",
+    "nombre": "Mani Tostado En Pote 500 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mani-tostado-en-pote-500-g.webp"
+  },
+  {
+    "id": "saludables-manteca-de-mani-con-azucar-400-g",
+    "nombre": "Manteca De Maní Con Azúcar 400 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/manteca-de-mani-con-azucar-400-g.webp"
+  },
+  {
+    "id": "saludables-manteca-de-mani-con-azucar-en-frasco-230-g",
+    "nombre": "Manteca De Maní Con Azúcar En Frasco 230 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/manteca-de-mani-con-azucar-en-frasco-230-g.webp"
+  },
+  {
+    "id": "saludables-manteca-de-mani-con-azucar-en-pote-200-g",
+    "nombre": "Manteca De Maní Con Azucar En Pote 200 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/manteca-de-mani-con-azucar-en-pote-200-g.webp"
+  },
+  {
+    "id": "saludables-manteca-de-mani-con-ka-a-he-e-en-frasco-230-g",
+    "nombre": "Manteca De Maní Con Ka´a He´e En Frasco 230 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/manteca-de-mani-con-ka-a-he-e-en-frasco-230-g.webp"
+  },
+  {
+    "id": "saludables-manteca-de-mani-con-ka-a-he-e-en-pote-200-g",
+    "nombre": "Manteca De Maní Con Ka´a He´e En Pote 200 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/manteca-de-mani-con-ka-a-he-e-en-pote-200-g.webp"
+  },
+  {
+    "id": "saludables-manteca-de-mani-natural-en-frasco-230-g",
+    "nombre": "Manteca De Maní Natural En Frasco 230 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/manteca-de-mani-natural-en-frasco-230-g.webp"
+  },
+  {
+    "id": "saludables-mantequilla-de-mani-con-cacao-en-frasco-230-g",
+    "nombre": "Mantequilla De Maní Con Cacao En Frasco 230 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mantequilla-de-mani-con-cacao-en-frasco-230-g.webp"
+  },
+  {
+    "id": "saludables-mantequilla-de-mani-con-cacao-en-pote-200-g",
+    "nombre": "Mantequilla De Maní Con Cacao En Pote 200 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mantequilla-de-mani-con-cacao-en-pote-200-g.webp"
+  },
+  {
+    "id": "saludables-mantequilla-de-mani-natural-en-pote-200-g",
+    "nombre": "Mantequilla De Maní Natural En Pote 200 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mantequilla-de-mani-natural-en-pote-200-g.webp"
+  },
+  {
+    "id": "saludables-mantequilla-de-mani-natural-en-pote-400-g",
+    "nombre": "Mantequilla De Maní Natural En Pote 400 g",
+    "categoria": "saludables",
+    "imagen": "/images/imagenes/saludables/mantequilla-de-mani-natural-en-pote-400-g.webp"
+  },
+  {
+    "id": "snacks-mani-cervezero-150-g",
+    "nombre": "Mani Cervezero 150 g",
+    "categoria": "snacks",
+    "imagen": "/images/imagenes/snacks/mani-cervezero-150-g.webp"
+  },
+  {
+    "id": "snacks-mani-garrapinado-150-g",
+    "nombre": "Mani Garrapinado 150 g",
+    "categoria": "snacks",
+    "imagen": "/images/imagenes/snacks/mani-garrapinado-150-g.webp"
+  },
+  {
+    "id": "snacks-mani-picante-150-g",
+    "nombre": "Mani Picante 150 g",
+    "categoria": "snacks",
+    "imagen": "/images/imagenes/snacks/mani-picante-150-g.webp"
+  },
+  {
+    "id": "snacks-mani-salado-150-g",
+    "nombre": "Mani Salado 150 g",
+    "categoria": "snacks",
+    "imagen": "/images/imagenes/snacks/mani-salado-150-g.webp"
+  },
+  {
+    "id": "snacks-mani-tostado-150-g",
+    "nombre": "Mani Tostado 150 g",
+    "categoria": "snacks",
+    "imagen": "/images/imagenes/snacks/mani-tostado-150-g.webp"
+  },
+  {
+    "id": "snacks-palito-salado-150-g",
+    "nombre": "Palito Salado 150 g",
+    "categoria": "snacks",
+    "imagen": "/images/imagenes/snacks/palito-salado-150-g.webp"
+  },
+  {
+    "id": "snacks-palito-salado-20-g",
+    "nombre": "Palito Salado 20 g",
+    "categoria": "snacks",
+    "imagen": "/images/imagenes/snacks/palito-salado-20-g.webp"
+  },
+  {
+    "id": "navidena-dulce-de-batata-250-g",
+    "nombre": "Dulce De Batata 250 g",
+    "categoria": "navidena",
+    "imagen": "/images/imagenes/navidena/dulce-de-batata-250-g.webp"
+  },
+  {
+    "id": "navidena-dulce-de-batata-500-g",
+    "nombre": "Dulce De Batata 500 g",
+    "categoria": "navidena",
+    "imagen": "/images/imagenes/navidena/dulce-de-batata-500-g.webp"
+  },
+  {
+    "id": "navidena-dulce-de-batata-500-g-circular",
+    "nombre": "Dulce De Batata 500 g Circular",
+    "categoria": "navidena",
+    "imagen": "/images/imagenes/navidena/dulce-de-batata-500-g-circular.webp"
+  },
+  {
+    "id": "navidena-mani-salado-150-g",
+    "nombre": "Mani Salado 150 g",
+    "categoria": "navidena",
+    "imagen": "/images/imagenes/navidena/mani-salado-150-g.webp"
+  },
+  {
+    "id": "navidena-mermelada-de-guayaba-450-g",
+    "nombre": "Mermelada De Guayaba 450 g",
+    "categoria": "navidena",
+    "imagen": "/images/imagenes/navidena/mermelada-de-guayaba-450-g.webp"
+  },
+  {
+    "id": "navidena-pan-dulce-chocotone-400-g",
+    "nombre": "Pan Dulce Chocotone 400 g",
+    "categoria": "navidena",
+    "imagen": "/images/imagenes/navidena/pan-dulce-chocotone-400-g.webp"
+  },
+  {
+    "id": "navidena-pan-dulce-sabores-400-g",
+    "nombre": "Pan Dulce Sabores 400 g",
+    "categoria": "navidena",
+    "imagen": "/images/imagenes/navidena/pan-dulce-sabores-400-g.webp"
+  },
+  {
+    "id": "zero-dulce-de-leche-zero-repostero-5-kg",
+    "nombre": "Dulce De Leche Zero Repostero 5 kg",
+    "categoria": "zero",
+    "imagen": "/images/imagenes/zero/dulce-de-leche-zero-repostero-5-kg.webp"
+  },
+  {
+    "id": "zero-mermelada-de-ciruela-zero-5-kg",
+    "nombre": "Mermelada De Ciruela Zero 5 kg",
+    "categoria": "zero",
+    "imagen": "/images/imagenes/zero/mermelada-de-ciruela-zero-5-kg.webp"
+  },
+  {
+    "id": "zero-mermelada-de-frutilla-zero-x-5-kg",
+    "nombre": "Mermelada De Frutilla Zero X 5 kg",
+    "categoria": "zero",
+    "imagen": "/images/imagenes/zero/mermelada-de-frutilla-zero-x-5-kg.webp"
+  },
+  {
+    "id": "zero-mermelada-de-naranja-zero-5-kg",
+    "nombre": "Mermelada De Naranja Zero 5 kg",
+    "categoria": "zero",
+    "imagen": "/images/imagenes/zero/mermelada-de-naranja-zero-5-kg.webp"
   }
 ]

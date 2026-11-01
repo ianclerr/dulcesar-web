@@ -5,10 +5,30 @@ const categories = [
   {
     slug: 'mermeladas',
     name: 'Mermeladas',
-    description: 'Tradicionales, light y zero',
+    description: 'Clásicas y económicas',
     image: '/images/imagenes/mermeladas/mermelada-de-guayaba-tradicional-500-g.webp',
     tone: 'from-red-800 to-rose-700',
-    frame: 'origin-[50%_54%] scale-[1.55] group-hover:scale-[1.62]',
+  },
+  {
+    slug: 'mermeladas-light',
+    name: 'Mermeladas light',
+    description: 'Menos azúcar, mismo sabor',
+    image: '/images/imagenes/mermeladas-light/mermelada-light-de-guayaba-en-frasco-380-g.webp',
+    tone: 'from-rose-700 to-red-600',
+  },
+  {
+    slug: 'mermeladas-zero',
+    name: 'Zero y batata',
+    description: 'Mermeladas y dulce de batata',
+    image: '/images/imagenes/mermeladas-zero/dulce-de-batata-zero-en-barra-350-g.webp',
+    tone: 'from-rose-800 to-red-700',
+  },
+  {
+    slug: 'tradicional',
+    name: 'Tradicional',
+    description: 'Dulce de batata y clásicos',
+    image: '/images/imagenes/tradicional/batata-400-g.webp',
+    tone: 'from-amber-800 to-orange-700',
   },
   {
     slug: 'aderezos',
@@ -16,7 +36,6 @@ const categories = [
     description: 'Salsas y vinagres para cada mesa',
     image: '/images/imagenes/aderezos/salsa-de-ajo-250-ml.webp',
     tone: 'from-orange-800 to-red-700',
-    frame: 'origin-[50%_60%] scale-[1.28] group-hover:scale-[1.34]',
   },
   {
     slug: 'jugos',
@@ -24,7 +43,6 @@ const categories = [
     description: 'Concentrados y líneas Twist',
     image: '/images/imagenes/jugos/jugo-twist-citrus-2-l.webp',
     tone: 'from-amber-600 to-orange-600',
-    frame: 'origin-center scale-100 group-hover:scale-[1.04]',
   },
   {
     slug: 'granos',
@@ -32,7 +50,41 @@ const categories = [
     description: 'Clásicos para tu despensa',
     image: '/images/imagenes/granos/maiz-pororo-400-g.webp',
     tone: 'from-yellow-700 to-amber-600',
-    frame: 'origin-[50%_46%] scale-100 group-hover:scale-[1.03]',
+  },
+  {
+    slug: 'reposteria',
+    name: 'Repostería',
+    description: 'Insumos para hornear',
+    image: '/images/imagenes/reposteria/crema-chantilly-200-g.webp',
+    tone: 'from-orange-700 to-amber-600',
+  },
+  {
+    slug: 'saludables',
+    name: 'Saludables',
+    description: 'Granolas, maní y más',
+    image: '/images/imagenes/saludables/granola-premium-x-300-g.webp',
+    tone: 'from-emerald-700 to-green-600',
+  },
+  {
+    slug: 'snacks',
+    name: 'Snacks',
+    description: 'Para picar y compartir',
+    image: '/images/imagenes/snacks/mani-salado-150-g.webp',
+    tone: 'from-orange-600 to-yellow-600',
+  },
+  {
+    slug: 'navidena',
+    name: 'Navideña',
+    description: 'Sabores para las fiestas',
+    image: '/images/imagenes/navidena/pan-dulce-sabores-400-g.webp',
+    tone: 'from-red-700 to-red-900',
+  },
+  {
+    slug: 'zero',
+    name: 'Zero',
+    description: 'Presentaciones de 5 kg',
+    image: '/images/imagenes/zero/mermelada-de-frutilla-zero-x-5-kg.webp',
+    tone: 'from-emerald-800 to-teal-700',
   },
 ];
 
@@ -65,19 +117,19 @@ const counts = Object.fromEntries(
             data-open-catalog={category.slug}
             class="group flex flex-col overflow-hidden rounded-[1.35rem] bg-[#f3f3f3] text-left shadow-lg ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl sm:rounded-[1.75rem]"
           >
-            <span class="relative block aspect-[2/3] overflow-hidden bg-[#f2f2f2]">
+            <span class="relative block aspect-[3/2] overflow-hidden bg-[#f3f3f3]">
               <img
                 src={category.image}
                 alt=""
-                width="800"
-                height="1200"
+                width="1200"
+                height="800"
                 loading="lazy"
                 decoding="async"
-                class:list={['h-full w-full object-cover transition duration-500', category.frame]}
+                class="h-full w-full object-contain"
               />
             </span>
             <span class:list={['block bg-gradient-to-br p-3 text-white sm:p-5', category.tone]}>
-              <span class="block font-display text-[1.65rem] leading-none sm:text-3xl">{category.name}</span>
+              <span class="block font-display text-[1.45rem] leading-none sm:text-[1.85rem]">{category.name}</span>
               <span class="mt-1 hidden text-sm text-white/85 sm:block">{category.description}</span>
               <span class="mt-1.5 inline-flex items-center gap-1 text-xs font-extrabold sm:mt-2 sm:text-sm">
                 Ver {counts[category.slug]} productos <span aria-hidden="true">→</span>
@@ -154,15 +206,15 @@ const counts = Object.fromEntries(
               data-search={product.nombre.toLowerCase()}
               class="card flex flex-col overflow-hidden"
             >
-              <span class="block aspect-[4/5] overflow-hidden bg-[#e9e9e9]">
+              <span class="block aspect-[3/2] overflow-hidden bg-[#f3f3f3]">
                 <img
                   src={product.imagen}
                   alt={product.nombre}
-                  width="640"
+                  width="1200"
                   height="800"
                   loading="lazy"
                   decoding="async"
-                  class="h-full w-full object-cover"
+                  class="h-full w-full object-contain"
                 />
               </span>
               <div class="flex flex-1 flex-col p-3 sm:p-4">
